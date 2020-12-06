@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Story Synth Documentation',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -38,12 +38,8 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Story Synth',
+        link: 'https://storysynth.org'
       }
     ],
     sidebar: {
@@ -53,7 +49,10 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'design',
+            'formats',
+            'publish',
+            'extend',
           ]
         }
       ],

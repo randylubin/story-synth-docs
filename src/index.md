@@ -1,15 +1,14 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: /android-chrome-512x512.png
 tagline: Documentation for the storytelling game platform Story Synth
-actionText: Quick Start →
+actionText: Get Started →
 actionLink: /guide/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by Randy Lubin with ❤️
+- title: 🖋 Design
+  details: Create new games by copying a Google Sheet and adding your own prompts
+- title: ⛵️ Share
+  details: Paste your Sheet URL into Story Synth to generate your game and a URL which you can share online
+- title: 📰 Publish
+  details: Keep your game on StorySynth.org or build a standalone website tailored to your game
 ---

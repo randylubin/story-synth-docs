@@ -1,11 +1,11 @@
 {
   "name": "story-synth-docs",
   "version": "0.0.1",
-  "description": "Documentation for the storytelling game platform Story Synth",
+  "description": "How to design, publish with the storytelling game platform",
   "main": "index.js",
   "authors": {
     "name": "Randy Lubin",
-    "email": "randylubin@gmail.com"
+    "email": "randy@storysynth.org"
   },
   "repository": "/story-synth-docs",
   "scripts": {
@@ -14,6 +14,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.3"
-  }
+    "vuepress": "^1.7.1"
+  },
+  "author": "Randy Lubin <randylubin@gmail.com>"
 }
