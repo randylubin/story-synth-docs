@@ -1,0 +1,19 @@
+{
+  "name": "story-synth-docs",
+  "version": "0.0.1",
+  "description": "Documentation for the storytelling game platform Story Synth",
+  "main": "index.js",
+  "authors": {
+    "name": "Randy Lubin",
+    "email": "randylubin@gmail.com"
+  },
+  "repository": "/story-synth-docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
