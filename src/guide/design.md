@@ -40,6 +40,8 @@ You can use 'option' rows in the sheet to further customize the game. All format
 * cardBackgroundImage – an image that becomes the background of all of your cards
 * safetyCardButton – let's you relable the saftey button from the default of 'x-card'
 * safetyCardText – let's you replace the x-card text with your own custom safety text
+* monetization – the address for an ILP enabled wallet for players using a web monetization provider
+* revShare – the percent of revenue that gets shared with Story Synth, in decimal form from 0 to 1.0; default is 0.2 (20%)
 
 To use an option row, put 'option' in the first column, the option type in the second column, and the details in the third column. See the demo templates for examples. All options are optional – you can always leave them out.
 
