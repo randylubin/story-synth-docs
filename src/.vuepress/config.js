@@ -51,6 +51,8 @@ module.exports = {
             '',
             'design',
             'formats',
+            'options',
+            'extensions',
             'publish',
             'extend',
           ]

@@ -8,11 +8,11 @@ There are currently five game formats, which you can read about on the [Formats]
 
 Here are links to the Google Sheet Templates for each format:
 
-* [Shuffled](https://docs.google.com/spreadsheets/d/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w/edit?usp=sharing)
-* [Timed](https://docs.google.com/spreadsheets/d/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018/edit?usp=sharing)
-* [Secrets](https://docs.google.com/spreadsheets/d/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o/edit?usp=sharing)
-* [Monster](https://docs.google.com/spreadsheets/d/1NgNHy7Qe1R8KhGR2cOmJwL2aOl2tocBemW2HIAKjrvI/edit?usp=sharing)
-* [Slot Machine](https://docs.google.com/spreadsheets/d/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU/edit?usp=sharing)
+- [Shuffled](https://docs.google.com/spreadsheets/d/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w/edit?usp=sharing)
+- [Timed](https://docs.google.com/spreadsheets/d/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018/edit?usp=sharing)
+- [Secrets](https://docs.google.com/spreadsheets/d/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o/edit?usp=sharing)
+- [Monster](https://docs.google.com/spreadsheets/d/1NgNHy7Qe1R8KhGR2cOmJwL2aOl2tocBemW2HIAKjrvI/edit?usp=sharing)
+- [Slot Machine](https://docs.google.com/spreadsheets/d/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU/edit?usp=sharing)
 
 Open the spreadsheet that best fits your game and then make a copy of it: **File > Make a copy**
 
@@ -26,32 +26,28 @@ You can add or delete rows to match the length of your game.
 
 If you are using a template that has columns for different players, you can edit those column headers (row 1) to match the player or character names. You can add or delete columns to match the number of players for your game.
 
-## 3. Customize the style, title, and byline, and blurb
+## 3. Customize with Options and Extensions
 
-You can use 'option' rows in the sheet to further customize the game. All formats support the following options:
+Story Synth offers two approaches to customizing your game: Options and Extensions
 
-* gameTitle – this will display your game's title at the top of the page
-* byline – this will show a subtitle or byline underneath the title
-* gameBlurb – this will show up on the game launcher page where players can create new sessions
-* style – use this space to alter the CSS styles on the page (both in a session and in the game launcher). All CSS must be inside `<style> </style>` tags
-* password – set a password that players will need in order to start new sessions (password isn't needed to join a session)
-* instructionsProgressBar – this will place a progress bar above the prompts, during the instructions (cards of deck 0). The value should be the number of instruction cards, not including the title card. Does not work for Secret or Timed format.
-* coverImage – a cover image that appears on the game launcher page and your first card
-* cardBackgroundImage – an image that becomes the background of all of your cards
-* safetyCardButton – let's you relable the saftey button from the default of 'x-card'
-* safetyCardText – let's you replace the x-card text with your own custom safety text
-* monetization – the address for an ILP enabled wallet for players using a web monetization provider
-* revShare – the percent of revenue that gets shared with Story Synth, in decimal form from 0 to 1.0; default is 0.2 (20%)
+### Options
 
-To use an option row, put 'option' in the first column, the option type in the second column, and the details in the third column. See the demo templates for examples. All options are optional – you can always leave them out.
+Options allow you to customize the visual style of your game, add metadata (like Title and Blurb), rename buttons, and more. You can use options by adding them as rows in your Google Sheet. Here's a few of the most popular options but you can find the full list at [Story Synth Options](/guide/extensions.html).
 
-If you're using the style option, here are some classes you may want to style:
+| Name       | Description                                                                |
+| ---------- | -------------------------------------------------------------------------- |
+| gameTitle  | Displays your game's title at the top of the page                          |
+| gameBlurb  | Includes a description of your game on the game launcher page              |
+| style      | Adds custom CSS to change the visual style of your page                    |
+| coverImage | Adds a cover image to your game launcher and to the first card of the game |
 
-* .full-page-background – this is the background for the whole page, use it to change the background color or image
-* .game-meta – the title, byline, and blurb for the game page and session page
-* .game-room – all game material is contained in this element; use it to update fonts and text color
-* .card – this class is applied to all game cards, use it to change the card background
-* .btn, .input – all buttons used on the page
+To use an option row, put 'option' in the first column, the option name in the second column, and your custom details in the third column. See the demo templates for examples. All options are optional – you can always leave them out.
+
+### Extensions
+
+Story Synth extensions add extra functionality to existing formats such as dice rolling, inventory management, and state tracking. They are entirely optional and some are customizable. See [Story Synth Extensions](/guide/extensions.html) for more information on the different types.
+
+To see many of the extensions in action, check out the [Sandbox Demo](https://storysynth.org/#/Sandbox/1wkNipcFfxrKAfyEIppifGLjjjbkwVJLEwcKmvq3s5zs).
 
 ## 4. Set the sheet to public
 
