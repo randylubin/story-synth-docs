@@ -16,11 +16,12 @@ Example:
 
 ### Game Title
 
-This option will dispaly your game title on the game launcher page and at the top of the session page.
+The 'gameTitle' option will dispaly your game title on the game launcher page and at the top of the session page. You can also choose to show the title on the game launcher page but hide it in the session by using 'hideTitleInSession'.
 
-| First Column | Extension Name | Example Customization |
-| ------------ | -------------- | --------------------- |
-| option       | gameTitle      | Around the Realm      |
+| First Column | Extension Name     | Example Customization |
+| ------------ | ------------------ | --------------------- |
+| option       | gameTitle          | Around the Realm      |
+| option       | hideTitleInSession | TRUE                  |
 
 ### Byline
 
@@ -55,7 +56,7 @@ The 'style' option is the place to use CSS to modify the visual style of the gam
 
 | First Column | Extension Name | Example Customization                                                   |
 | ------------ | -------------- | ----------------------------------------------------------------------- |
-| option       | wallet         | \<style>.full-page-background { background: rgb(255,255,255);}\</style> |
+| option       | style          | \<style>.full-page-background { background: rgb(255,255,255);}\</style> |
 
 Here are some classes you may want to apply CSS to:
 
@@ -110,6 +111,14 @@ These options let you set a background image for your cards. If you just use 'ca
 
 ## Buttons, Modals, and More
 
+### Hide Headers
+
+The Shuffled format has headers on each card but you might not need them. If you'd like them to be hidden, use the hideHeadersOnCards option.
+
+| First Column | Extension Name     | Example Customization |
+| ------------ | ------------------ | --------------------- |
+| option       | hideHeadersOnCards | TRUE                  |
+
 ### Instruction Progress Bar
 
 This will place a progress bar above the prompts during the instructions round (cards of deck 0). The value in the customization field should be the number of instruction cards, not including the title card. This does not work for Secret or Timed format.
@@ -117,6 +126,23 @@ This will place a progress bar above the prompts during the instructions round (
 | First Column | Extension Name          | Example Customization |
 | ------------ | ----------------------- | --------------------- |
 | option       | instructionsProgressBar | 14                    |
+
+### Ending Reminder
+
+These two options allow you to specify a reminder to players that they can end the game by pressing the "Last Card" button. The lastCardReminderText is what will show up on the reminder and lastCardReminderFrequency sets how often the reminder appears (how many cards). This only works in the 'Shuffled' format.
+
+| First Column | Extension Name            | Example Customization                                             |
+| ------------ | ------------------------- | ----------------------------------------------------------------- |
+| option       | lastCardReminderText      | Reminder: you can bring the game to a close by clicking Last Card |
+| option       | lastCardReminderFrequency | 10                                                                |
+
+### 'Last Card' Button Label
+
+For the 'Shuffled' format, you can rename the 'Last Card' button and dropdown.
+
+| First Column | Extension Name | Example Customization |
+| ------------ | -------------- | --------------------- |
+| option       | lastCardLabel  | End Game              |
 
 ### 'Next Deck' Button
 
@@ -147,3 +173,19 @@ You can have one or two modals and you can change the lable on the buttons. You 
 | option       | modalOneText   | Here's an instructions recap...    |
 | option       | modalTwoLabel  | Settings                           |
 | option       | modalTwoText   | Here's some info on the setting... |
+
+## Unfurl
+
+It's currently possible to add options to your game launcher page that let social media sites and messenger apps "unfurl" the game URL with a photo, title and description. Absent these options, the unfurl will be the generic Story Synth logo.
+
+The two key options at the moment are:
+
+- metaDescription: a short blurb which should be under 160 characters
+- ogImage: a square image of 500px by 500px
+
+| First Column | Extension Name  | Example Customization                                   |
+| ------------ | --------------- | ------------------------------------------------------- |
+| option       | metaDescription | Tell the story of heroes racing around the realm        |
+| option       | ogImage         | https://diegeticgames.com/uploads/card-bottom-wave2.png |
+
+Further, you'll need to Randy know by emailing him a link to your game: <unfurl@storysynth.org>
