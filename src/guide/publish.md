@@ -1,6 +1,6 @@
-# How to Publish with Story Synth
+# Port Story Synth to Your Own Website
 
-This guide covers how to publish your Story Synth game on its own website so that anyone can create a session and play. You should already be familiar with the [How to Playtest](https://docs.google.com/document/d/1A676dhZP_4KPPhHGZ3L4ngVvo5pr3c7LQIcUD9Wgi6Y/edit?usp=sharing) guide.
+This guide covers how to publish your Story Synth game on your own website so that anyone can create a session and play. You should already be familiar with the [How to Playtest](https://docs.google.com/document/d/1A676dhZP_4KPPhHGZ3L4ngVvo5pr3c7LQIcUD9Wgi6Y/edit?usp=sharing) guide.
 
 Visit [Dawn of the Monster Invasion](http://monster.diegeticgames.com/) for example of a published game that runs on Story Synth.
 
@@ -37,7 +37,7 @@ Remove the GameMaker component from the App template, as we'll use GameLauncher 
 
 Next, we need to set some extra defaults so that Story Synth always uses your game template and spreadsheet.
 
-Hardcode the template type into the router-link in GameLauncher.vue. For example it might look like `<router-link :to="{path: '/' + formatToURL(“Shuffled”, gSheetID, roomID)}">`
+Hardcode the template type into the router-link in GameLauncher.vue. For example it might look like `<router-link :to="{ path: constructURL( $route.fullPath, Shuffled, gSheetID, roomID ), }" >`
 
 Hardcode your Google Sheet URL into your game’s .vue file. In the function fetchAndCleanSheetData, set the variable getURL equal to your Google Spreadsheet link.
 
@@ -45,10 +45,12 @@ Hardcode your Google Sheet URL into your game’s .vue file. In the function fet
 
 You’ll want to update metadata in a few locations:
 
-* The meta-title and meta-description in /public/index.html
-* The favicon.ico
-* The readme
-* The Google Analytics ID in the site head
+- The favicon.ico
+- The Readme
+- The Meta tags in App.js
+- The Google Analytics ID in the site head
+- The Mixpanel ID in main.js
+- The list of pages to prerender in vue.config.js
 
 ## 5. Publish to Firebase Hosting
 

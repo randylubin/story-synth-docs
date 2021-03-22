@@ -1,4 +1,8 @@
-# How to Extend Story Synth
+# Add Features to Story Synth
+
+::: warning Add Features to the Roadmap
+If you have minor feature requests or new format suggestions, send them to Randy and he'll add them to the roadmap: randy@storysynth.org
+:::
 
 Story Synth is designed to be adapted to new types of storytelling games with novel mechanics. The framework is open sourced under an [MIT License](https://github.com/randylubin/Story-Synth/blob/master/LICENSE) and you’re free to do almost anything you want with it. Check out the [Story Synth codebase](https://github.com/randylubin/Story-Synth) on GitHub.
 

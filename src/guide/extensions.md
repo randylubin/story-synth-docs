@@ -37,15 +37,20 @@ This extension adds a box of static text to the top of your game. It might be us
 
 This extension lets you keep track of player turns. If you're playing in a format that has a "next card" button, hitting that button will automatically advance the player turn. You can also click on a player's name to make it their turn.
 
+The optional row of playerTurnOrderHeader lets you rename the header for this section, playerTurnOrderButtonLabel lets you overwrite the button text. You can also use playerTurnOrderFirstVisible to hide the player turn order extension until after you reach a specific card.
+
 ### Player Turn Example
 
 ::: warning Note
-You must put '{}' in the third column.
+You must put '{}' in the third column of playerTurnOrder.
 :::
 
-| First Column | Extension Name  | Example Customization |
-| ------------ | --------------- | --------------------- |
-| extension    | playerTurnOrder | {}                    |
+| First Column | Extension Name              | Example Customization |
+| ------------ | --------------------------- | --------------------- |
+| extension    | playerTurnOrder             | {}                    |
+| extension    | playerTurnOrderHeader       | Turn Turn Turn        |
+| extension    | playerTurnOrderButtonLabel  | Add me                |
+| extension    | playerTurnOrderFirstVisible | 8                     |
 
 ## Plus Minus
 

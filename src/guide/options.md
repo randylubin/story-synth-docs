@@ -127,6 +127,17 @@ This will place a progress bar above the prompts during the instructions round (
 | ------------ | ----------------------- | --------------------- |
 | option       | instructionsProgressBar | 14                    |
 
+### Card Counter
+
+You can use displayCardCount to show the total number of cards drawn by the players in the Shuffled format. The value of the option indicates the first card that you want to include in the count – probably the first non-instruction card.
+
+The default text is "Cards seen: " and you can change it by using the option displayCardCountLabel.
+
+| First Column | Extension Name        | Example Customization |
+| ------------ | --------------------- | --------------------- |
+| option       | displayCardCount      | 7                     |
+| option       | displayCardCountLabel | Prompts answered      |
+
 ### Ending Reminder
 
 These two options allow you to specify a reminder to players that they can end the game by pressing the "Last Card" button. The lastCardReminderText is what will show up on the reminder and lastCardReminderFrequency sets how often the reminder appears (how many cards). This only works in the 'Shuffled' format.
