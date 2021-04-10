@@ -138,6 +138,14 @@ The default text is "Cards seen: " and you can change it by using the option dis
 | option       | displayCardCount      | 7                     |
 | option       | displayCardCountLabel | Prompts answered      |
 
+### Set Last Card Location
+
+This option specifies when the Last Card will appear (if you're using the single deck, shuffled format). The number in the customization field specifies the number of prompts will be drawn before jumping to the ending – not counting the instruction cards. If it's positive, it's the number of prompts after the instructions (e.g. 5 would be after the 5th prompt), if it's negative, it's the number of prompts before the end (e.g. -5 would be before the 5th to last card).
+
+| First Column | Extension Name      | Example Customization |
+| ------------ | ------------------- | --------------------- |
+| option       | setLastCardLocation | 10                    |
+
 ### Ending Reminder
 
 These two options allow you to specify a reminder to players that they can end the game by pressing the "Last Card" button. The lastCardReminderText is what will show up on the reminder and lastCardReminderFrequency sets how often the reminder appears (how many cards). This only works in the 'Shuffled' format.
@@ -197,6 +205,6 @@ The two key options at the moment are:
 | First Column | Extension Name  | Example Customization                                   |
 | ------------ | --------------- | ------------------------------------------------------- |
 | option       | metaDescription | Tell the story of heroes racing around the realm        |
-| option       | ogImage         | https://diegeticgames.com/uploads/card-bottom-wave2.png |
+| option       | ogImageSquare   | https://diegeticgames.com/uploads/card-bottom-wave2.png |
 
 Further, you'll need to Randy know by emailing him a link to your game: <unfurl@storysynth.org>
