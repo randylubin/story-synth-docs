@@ -9,6 +9,7 @@ There are currently five game formats, which you can read about on the [Formats]
 Here are links to the Google Sheet Templates for each format:
 
 - [Shuffled](https://docs.google.com/spreadsheets/d/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w/edit?usp=sharing)
+- [Phases](https://docs.google.com/spreadsheets/d/1HataDfV2lrA4hfzmLgDjXH09dEMLQV6OT10tVH9G52A/edit?usp=sharing)
 - [Timed](https://docs.google.com/spreadsheets/d/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018/edit?usp=sharing)
 - [Secrets](https://docs.google.com/spreadsheets/d/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o/edit?usp=sharing)
 - [Monster](https://docs.google.com/spreadsheets/d/1NgNHy7Qe1R8KhGR2cOmJwL2aOl2tocBemW2HIAKjrvI/edit?usp=sharing)
