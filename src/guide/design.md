@@ -4,16 +4,16 @@ Desinging a game for Story Synth is as easy as putting your game content in a Go
 
 ## 1. Copy the template spreadsheet
 
-There are currently five game formats, which you can read about on the [Formats](/guide/formats.html) page.
+There are currently six game formats, which you can read about on the [Formats](/guide/formats.html) page.
 
-Here are links to the Google Sheet Templates for each format:
+Here are links to the Google Sheet Templates and demos for each format:
 
-- [Shuffled](https://docs.google.com/spreadsheets/d/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w/edit?usp=sharing)
-- [Phases](https://docs.google.com/spreadsheets/d/1HataDfV2lrA4hfzmLgDjXH09dEMLQV6OT10tVH9G52A/edit?usp=sharing)
-- [Timed](https://docs.google.com/spreadsheets/d/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018/edit?usp=sharing)
-- [Secrets](https://docs.google.com/spreadsheets/d/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o/edit?usp=sharing)
-- [Monster](https://docs.google.com/spreadsheets/d/1NgNHy7Qe1R8KhGR2cOmJwL2aOl2tocBemW2HIAKjrvI/edit?usp=sharing)
-- [Slot Machine](https://docs.google.com/spreadsheets/d/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU/edit?usp=sharing)
+- [Shuffled template](https://docs.google.com/spreadsheets/d/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w/edit?usp=sharing) and [Shuffled demo](https://storysynth.org/#/Shuffled/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w)
+- [Phases template](https://docs.google.com/spreadsheets/d/1HataDfV2lrA4hfzmLgDjXH09dEMLQV6OT10tVH9G52A/edit?usp=sharing) and [Phases demo](https://storysynth.org/#/Phases/1HataDfV2lrA4hfzmLgDjXH09dEMLQV6OT10tVH9G52A)
+- [Monster template](https://docs.google.com/spreadsheets/d/1NgNHy7Qe1R8KhGR2cOmJwL2aOl2tocBemW2HIAKjrvI/edit?usp=sharing) and [Monster demo](https://storysynth.org/#/Monster/1NgNHy7Qe1R8KhGR2cOmJwL2aOl2tocBemW2HIAKjrvI)
+- [Slot Machine template](https://docs.google.com/spreadsheets/d/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU/edit?usp=sharing) and [Slot Machine demo](https://storysynth.org/#/SlotMachine/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU)
+- [Secrets template](https://docs.google.com/spreadsheets/d/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o/edit?usp=sharing) and [Secrets demo](https://storysynth.org/#/SecretCards/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o)
+- [Timed template](https://docs.google.com/spreadsheets/d/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018/edit?usp=sharing) and [Timed demo](https://storysynth.org/#/Timed/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018)
 
 Open the spreadsheet that best fits your game and then make a copy of it: **File > Make a copy**
 

@@ -38,6 +38,10 @@ module.exports = {
         link: '/guide/',
       },
       {
+        text: 'Press',
+        link: '/press/',
+      },
+      {
         text: 'Story Synth',
         link: 'https://storysynth.org'
       }
@@ -58,6 +62,15 @@ module.exports = {
           ]
         }
       ],
+      '/press/': [
+        {
+          title: 'Press',
+          collapsable: false,
+          children: [
+            '',
+          ]
+        }
+      ]
     }
   },
 

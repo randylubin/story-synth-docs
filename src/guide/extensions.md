@@ -77,16 +77,29 @@ This extension creates a list that players can edit by adding or removing items.
 
 You can also set a title for this extension using 'editableListTitle'
 
+You can have the editable list only appear after a certain point by using editableListFirstVisible and specifying what card it first appears on.
+
 ::: warning Note
-Items on the initial list should be separated by commas.
+Items on the initial list should be separated by commas. If you want to have an empty intial list, just have the third column as: EMPTY
 :::
 
 ### Editable List Example
 
-| First Column | Extension Name    | Example Customization                              |
-| ------------ | ----------------- | -------------------------------------------------- |
-| extension    | editableListTitle | Inventory                                          |
-| extension    | editableList      | Cursed treasure, Magical compass, Letter of marque |
+| First Column | Extension Name           | Example Customization                              |
+| ------------ | ------------------------ | -------------------------------------------------- |
+| extension    | editableListTitle        | Inventory                                          |
+| extension    | editableList             | Cursed treasure, Magical compass, Letter of marque |
+| extension    | editableListFirstVisible | 5                                                  |
+
+## Multiple Editable Lists
+
+If you want to have more than one editable list (perhaps for different categories) you can use the extension 'multiEditableLists'
+
+In this case, the data should have be an array of objects with each object having a name (name of the list) and value (initial items in the list).
+
+| First Column | Extension Name     | Example Customization                                                                                                       |
+| ------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| extension    | multiEditableLists | [{"name": "Locations", "value": ["The Docks", "The Market"]},{"name": "Allies", "value": ["The Governer", "The Smuggler"]}] |
 
 ## Dice Roller
 

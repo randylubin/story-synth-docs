@@ -140,7 +140,11 @@ The default text is "Cards seen: " and you can change it by using the option dis
 
 ### Set Last Card Location
 
-This option specifies when the Last Card will appear (if you're using the single deck, shuffled format). The number in the customization field specifies the number of prompts will be drawn before jumping to the ending – not counting the instruction cards. If it's positive, it's the number of prompts after the instructions (e.g. 5 would be after the 5th prompt), if it's negative, it's the number of prompts before the end (e.g. -5 would be before the 5th to last card).
+This option specifies when the Last Card will appear (if you're using the single deck, shuffled format). There are a few ways to specify the location.
+
+If you use an integer, the number in the customization field specifies the number of prompts will be drawn before jumping to the ending – not counting the instruction cards. If it's positive, it's the number of prompts after the instructions (e.g. 5 would be after the 5th prompt), if it's negative, it's the number of prompts before the end (e.g. -5 would be before the 5th to last card).
+
+If you use a decimal, then it will be randomly shuffled into that percentage of the back of the deck. For example, 0.5 would be randomly shuffled into the back half of the deck and 0.25 would be shuffled into the last quarter of the deck.
 
 | First Column | Extension Name      | Example Customization |
 | ------------ | ------------------- | --------------------- |
@@ -170,6 +174,14 @@ This is for the Shuffled Format only and replaces the 'Last Card' button with a 
 | First Column | Extension Name     | Example Customization |
 | ------------ | ------------------ | --------------------- |
 | option       | showNextDeckButton | Next Act              |
+
+### Reversable Cards
+
+This option allows you to add a fourth column of data to your Shuffled spreadsheet which will appear on the backs of cards. Make sure you add a column header in the first row that says _back_. Cards with back content will have a button on them that allows players to flip them over and back again. Flipping a card will flip that card for all players.
+
+| First Column | Extension Name  | Example Customization |
+| ------------ | --------------- | --------------------- |
+| option       | reversableCards | TRUE                  |
 
 ### Safety Card Button and Text
 

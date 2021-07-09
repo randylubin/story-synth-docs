@@ -10,10 +10,10 @@ This format is inspired by Alex Robert’s game _For the Queen_ ([buy](https://w
 
 Games following this format have:
 
-* A series of instructions, spread over short cards that appear in a fixed order
-* A number of storytelling prompts that are shuffled in order
-* A final card that brings the game to a close, which is always the last card
-* An [X-Card](http://tinyurl.com/x-card-rpg) for safety
+- A series of instructions, spread over short cards that appear in a fixed order
+- A number of storytelling prompts that are shuffled in order
+- A final card that brings the game to a close, which is always the last card
+- An [X-Card](http://tinyurl.com/x-card-rpg) for safety
 
 Unlike _For the Queen_, there are no Queen cards to choose from and the final card is always last, rather than shuffled into the deck.
 
@@ -47,9 +47,9 @@ This format is inspired by Randy Lubin’s game _Dawn of the Monster Invasion_ (
 
 This format has:
 
-* A series of ordered instructions at the beginning of the game
-* A series of rounds, with each round containing several prompts to choose from
-* The prompts are fixed to the specific rounds (i.e. not random) and players will face the same options each playthrough
+- A series of ordered instructions at the beginning of the game
+- A series of rounds, with each round containing several prompts to choose from
+- The prompts are fixed to the specific rounds (i.e. not random) and players will face the same options each playthrough
 
 ## Slot Machine
 
@@ -57,9 +57,9 @@ This format has:
 
 This format has:
 
-* A series of ordered instructions at the beginning of the game
-* A series of cards that each randomly draw elements from a number of categories (e.g. one from category A, one from category b, one from category c)
-* There's no limit to the number of cards or categories
+- A series of ordered instructions at the beginning of the game
+- A series of cards that each randomly draw elements from a number of categories (e.g. one from category A, one from category b, one from category c)
+- There's no limit to the number of cards or categories
 
 This format might be useful for those who want to generate random encounters, random locations, random characters, or a any other random prompts that are created from several categories.
 
@@ -70,3 +70,22 @@ This format might be useful for those who want to generate random encounters, ra
 This format takes place over rounds, where each round has a series of phases that happen in order. For each phase, a prompt is drawn from the corresponding phase deck.
 
 A game about travel might use phases: new mode of transit, trouble on the road, new location, and trouble in location. In each round, each phase will be visited once in sequence and a random, relevant prompt will be show.
+
+## Generator
+
+[Generator Template Spreadsheet](https://docs.google.com/spreadsheets/d/1F0g3rVHxRA7O0rRMIQSsLCepJStxBO6pa7QJUNJb3K0/edit?usp=sharing)
+
+[Generator Demo](https://storysynth.org/Generator/1F0g3rVHxRA7O0rRMIQSsLCepJStxBO6pa7QJUNJb3K0/)
+
+This format shows randomly selected options from different categories over a customized layout of rows and columns. Players can regenerate the entire group of selections or individual categories.
+
+This format is great for generating multipart scenarios, adventures, or locations.
+
+Key options:
+
+- upperText – custom text that appears above the generator
+- lowerText - custom text that appears below the generator
+- generatorRowLayout - how you specify the layout of the generator; input how many columns per row with each row separated by a comma. You can use 1, 2, 3, 4, or 6 columns per row. (e.g. "2,1,4,3").
+- styleTemplate – use this to specify an existing style template. Options: cyberpunk, vaporwave, fantasy, dark, light.
+- showSummary – let players switch from grid view to the concise Summary View
+- showFullLists – let players switch from grid view to Full List View, which shows all possible options per category
