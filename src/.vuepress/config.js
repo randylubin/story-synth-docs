@@ -70,6 +70,16 @@ module.exports = {
             '',
           ]
         }
+      ],
+      '/tutorials/': [
+        {
+          title: 'Tutorials',
+          collapsable: false,
+          children: [
+            '',
+            'styling',
+          ]
+        }
       ]
     }
   },
