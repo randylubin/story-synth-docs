@@ -85,6 +85,7 @@ Key options:
 
 - upperText – custom text that appears above the generator
 - lowerText - custom text that appears below the generator
+- showGameTitleOnCard - adds the game's title to the top of the card
 - generatorRowLayout - how you specify the layout of the generator; input how many columns per row with each row separated by a comma. You can use 1, 2, 3, 4, or 6 columns per row. (e.g. "2,1,4,3").
 - styleTemplate – use this to specify an existing style template. Options: cyberpunk, vaporwave, fantasy, dark, light.
 - showSummary – let players switch from grid view to the concise Summary View
