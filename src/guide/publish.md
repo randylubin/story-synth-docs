@@ -27,31 +27,13 @@ Then you’ll be able to view the site at [localhost:8080](http://localhost:8080
 
 ## 2. Remove unnecessary code
 
-There’s plenty of code that’s necessary for the playtest version but not for the published version.
+There’s plenty of code that you won't need for your own published version.
 
 There are comments in the code `<!-- Remove for published version -->` or `// Remove for published version` to help you easily identify where they are. You can comment out those blocks of code or delete them entirely.
 
 ### In App.vue
 
 Remove any unused components. You’ll likely use only one of the game types and can remove the others from the template at the top, the import, and the components list. Depending on your interest, either update or remove the header and footer.
-
-::: warning Updating the homepage
-You may want to have your game's game launcher on the homepage, as with [Dawn of the Monster Invasion](http://monster.diegeticgames.com/). This will take a bit more work as it requires changing assorted v-if's in the App.vue template and updating some of the router-links.
-
-An easier approach is to replace GameMaker.vue with your own custom homepage which has a link to your game's GameLauncher URL. Either edit GameMaker.vue to have your own content, or create a new Homepage.vue file and add it to App.vue.
-:::
-
-### Hardcode the game type and Google Sheet link
-
-::: warning Only for a GameLauncher Homepage
-This section is only necessary if you want the GameLauncher to be your homepage.
-:::
-
-Next, we need to set some extra defaults so that Story Synth always uses your game template and spreadsheet.
-
-Hardcode the template type into the router-link in GameLauncher.vue. For example, you might take this line `<router-link :to="{path: constructURL($route.fullPath, roomID)}">` and replace `$route.fullPath` with the hardcoded URL that includes your game format and Sheet ID.
-
-Hardcode your Google Sheet URL into your game’s .vue file. In the function fetchAndCleanSheetData, set the variable getURL equal to your Google Spreadsheet link.
 
 ## 4. Update metadata and assets
 
@@ -82,13 +64,15 @@ At this point your site should be live on the web and shareable - congrats!
 
 While the above steps are all that’s needed to publish a Story Synth app, there plenty more customization that you can do.
 
-### Custom title and info
+### Custom homepage and launcher
 
-The homepage of your app lives in the GameLauncher.vue file. If you want to add a custom title or other custom info (game length, player count, etc), this is the best place to add it.
+The homepage of your app lives in the Homepage.vue – you can customize it suit your game or studio. If you want the game launcher to be on the homepage, set 'launcherOnHomepage' equal to the route of your game not including any roomID (e.g. '/Games/Around-The-Realm/'). Otherwise, you can edit the GameLauncher.vue file.
 
 ### Custom style
 
 Each Vue file (e.g. App.vue, RoomPicker.vue, Monster.vue) has its own style section at the bottom of the file. Custom CSS on App.vue will appear on all pages but if you only want to affect one page, then add it to just that page in the `<style scoped>` section.
+
+You can also use individual .scss files in the /src/assets/styleTemplates folder. Make sure import add any additional style files in the /main.js file.
 
 ### Pre-rendering pages
 
@@ -102,9 +86,21 @@ Make sure you:
 
 ### Custom Game URLs
 
-You may want your session links to have a cleaner URL (e.g. not including the long Google Sheet ID). If so, you can use the customGameLauncher, and customGameSessionManager files.
+You may want your session links to have a cleaner URL (e.g. not including the long Google Sheet ID).
 
-Use the existing games (e.g. Around the Realm) as an example of what you'd need for your games. You'll end up with a url for a custom game launcher that's something like: `storysynth.org/Games/Around-The-Realm`
+Use the existing games (e.g. Around the Realm) in the `/games/` folder as an example of what you'd need for your games. You'll end up with a url for a custom game launcher that's something like: `storysynth.org/Games/Around-The-Realm`
+
+The necessary steps include:
+
+1. Create the game page (e.g. AroundTheRealm.vue) by copying the format component (e.g. Phases.vue) and hardcoding the spreadsheet link.
+2. In CustomGameLauncher.vue
+   1. add a new object to the gameMetaData array with the correct meta data for your game
+   2. Add the game data to the mounted() switch statement – this should map the customOptions data in your game sheet
+3. In CustomGameSessionManager.vue
+   1. Add a link to the game component in the template section with a v-if that matches your game's route
+   2. Import your game's .vue file
+   3. Add your game as a component
+   4. Add your game to the gameMetaData array as you did above
 
 ### Hardcode game content
 
@@ -113,9 +109,10 @@ When you’re done iterating on your games content, you can hardcode it directly
 To hardcode your game content follow, these steps:
 
 1. Download your Google Sheet as a CSV: `File > Download > Comma-separated values`
-2. Convert the .csv file to JSON via [Convert CSV](https://www.convertcsv.com/csv-to-json.htm)
+2. Convert the .csv file to JSON via [Convert CSV](https://www.convertcsv.com/csv-to-json.htm) using the CSV to JSON Array option. Make sure "First row is column names" is NOT checked off.
 3. Remove Axios API call in fetchAndCleanSheetData()
 4. In fetchAndCleanSheetData(), set this.gSheet equal to the JSON object from Convert CSV
+5. Remove all references to `.formattedValue` and `.values` (you can just delete those strings)
 
 ## Next steps
 
