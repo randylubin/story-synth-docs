@@ -14,6 +14,8 @@ Here are links to the Google Sheet Templates and demos for each format:
 - [Slot Machine template](https://docs.google.com/spreadsheets/d/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU/edit?usp=sharing) and [Slot Machine demo](https://storysynth.org/#/SlotMachine/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU)
 - [Secrets template](https://docs.google.com/spreadsheets/d/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o/edit?usp=sharing) and [Secrets demo](https://storysynth.org/#/SecretCards/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o)
 - [Timed template](https://docs.google.com/spreadsheets/d/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018/edit?usp=sharing) and [Timed demo](https://storysynth.org/#/Timed/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018)
+- [Generator template](https://docs.google.com/spreadsheets/d/1F0g3rVHxRA7O0rRMIQSsLCepJStxBO6pa7QJUNJb3K0/edit?usp=sharing) and [Generator Demo](https://storysynth.org/Generator/1F0g3rVHxRA7O0rRMIQSsLCepJStxBO6pa7QJUNJb3K0/)
+- [Hexflower Template](https://docs.google.com/spreadsheets/d/1wLDboZZBfBwMKswMYcRIXxz6DxRZJyAa6KPW6TvR-dM/edit?usp=sharing) and [Hexflower Demo](https://storysynth.org/Hexflower/1wLDboZZBfBwMKswMYcRIXxz6DxRZJyAa6KPW6TvR-dM/)
 
 Open the spreadsheet that best fits your game and then make a copy of it: **File > Make a copy**
 
@@ -86,3 +88,34 @@ If you want to publish your game on it's own website, using the Story Synth code
 If you want to extend Story Synth to add new mechanics, check out [How to Extend](/guide/extend.html) guide.
 
 If you have any questions, feel free to email [randy@storysynth.org](mailto:randy@storysynth.org)
+
+## Miscellaneous
+
+### Icons from Game-icons.net
+
+Story Synth contains all of the icons from [Game-icons.net](https://game-icons.net/), which are licensed under Creative Commons CC-BY or are in the public domain. These will work in any part of the spreadsheet where html is allowed.
+
+To use these icons in your game:
+
+1. Find the icon you want on the [Game-icons.net](https://game-icons.net/) site
+2. Copy the URL path for that page starting with the '/' after .net and ignoring the trailing .html
+3. Create a image element in your spreadsheet with the `src` set to `https://storysynth.org/img/game-icons/transparent` followed by the URL path you copied and then add ".svg" to the end
+4. Add an `alt` attribute describing the icon
+5. Give credit back to the designer somewhere in your game (e.g. in a credits section)
+
+The icon is black on a transparent background. If you want to change the color, you can use the `style` attribute. Use `background-color` to set the background color. For the stroke color, you'll need to visit [this codepen](https://codepen.io/sosuke/pen/Pjoqqp) and it will convert a hexcolor to a filter value – then paste that filter value in the img element.
+
+For example, if I wanted to use the [Sloth icon](https://game-icons.net/1x1/caro-asercion/sloth.html) at `https://game-icons.net/1x1/caro-asercion/sloth.html` by Caro Asercion, and then make it blue. I would copy `/1x1/caro-asercion/sloth` and add it to the image source. Then I would add a style attribute with the value from the above codepen:
+
+```
+  <img
+    src="https://storysynth.org/img/game-icons/transparent/1x1/caro-asercion/sloth.svg"
+    alt="a picture of a blue sloth hanging from a tree"
+    style="filter: invert(54%) sepia(39%) saturate(4559%) hue-rotate(160deg) brightness(93%) contrast(101%);"
+  >
+```
+
+<img
+src="https://storysynth.org/img/game-icons/transparent/1x1/caro-asercion/sloth.svg"
+alt="a picture of a sloth hanging from a tree"
+style="filter: invert(54%) sepia(39%) saturate(4559%) hue-rotate(160deg) brightness(93%) contrast(101%); width: 100px;">

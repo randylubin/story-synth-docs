@@ -38,14 +38,16 @@ I’m planning to elaborate on these guides so please reach out with any questio
 
 ## Available formats and templates
 
-Story Synth currently has six different game formats you can use. Here’s a brief description of each and a link to its demo and template. You can read more about each format on the [Formats Page](/about/formats.html).
+Story Synth has several different game formats you can use. Here’s a brief description of each and a link to its demo and template. You can read more about each format on the [Formats Page](/about/formats.html).
 
 - Shuffled – a series of ordered prompts followed by shuffled prompts | [template](https://docs.google.com/spreadsheets/d/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w/edit?usp=sharing) | [demo](https://storysynth.org/#/Shuffled/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w)
 - Phases – the game rotates through a series of a phases, with each phase drawing from a corresponding deck | [template](https://docs.google.com/spreadsheets/d/1HataDfV2lrA4hfzmLgDjXH09dEMLQV6OT10tVH9G52A/edit?usp=sharing) | [demo](https://storysynth.org/#/Phases/1HataDfV2lrA4hfzmLgDjXH09dEMLQV6OT10tVH9G52A)
 - Monster – a series of ordered promts spread over rounds; some rounds have multiple prompts and can expand for more detail | [template](https://docs.google.com/spreadsheets/d/1NgNHy7Qe1R8KhGR2cOmJwL2aOl2tocBemW2HIAKjrvI/edit?usp=sharing) | [demo](https://storysynth.org/#/Monster/1NgNHy7Qe1R8KhGR2cOmJwL2aOl2tocBemW2HIAKjrvI)
 - Slot Machine – a series of cards with randomized content, drawn from each of several lists | [template](https://docs.google.com/spreadsheets/d/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU/edit?usp=sharing) | [demo](https://storysynth.org/#/SlotMachine/1t5LRUQG9DzMJ3kd8E9DZV7_EbE8J5-Gqhz7TWQ4Y-uU)
 - Secrets – each round, each player receives a shared public prompt and secret private prompt | [template](https://docs.google.com/spreadsheets/d/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o/edit?usp=sharing) | [demo](https://storysynth.org/#/SecretCards/1JwMF02DSxNKtjHp6u-wyznSs-iEG_3DpOobgc17I16o)
-- Timed – each player receives unique prompts at different times based on a shared stopwatch | [template](https://docs.google.com/spreadsheets/d/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018/edit?usp=sharing) | [``demo](https://storysynth.org/#/Timed/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018)
+- Timed – each player receives unique prompts at different times based on a shared stopwatch | [template](https://docs.google.com/spreadsheets/d/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018/edit?usp=sharing) | [demo](https://storysynth.org/#/Timed/1yq2AKwaYL1uZrCnEfwgSpC0SPkQAZqnCdjNxH_pm018)
+- Generator – randomly display results from several categories on one page and regenernate them independantly or en mass | [template](https://docs.google.com/spreadsheets/d/1F0g3rVHxRA7O0rRMIQSsLCepJStxBO6pa7QJUNJb3K0/edit?usp=sharing) | [demo](https://storysynth.org/Generator/1F0g3rVHxRA7O0rRMIQSsLCepJStxBO6pa7QJUNJb3K0/)
+- Hexflower – display content on a hexagon made of hexagons and allow players to navigate it | [template](https://docs.google.com/spreadsheets/d/1wLDboZZBfBwMKswMYcRIXxz6DxRZJyAa6KPW6TvR-dM/edit?usp=sharing) | [demo](https://storysynth.org/Hexflower/1wLDboZZBfBwMKswMYcRIXxz6DxRZJyAa6KPW6TvR-dM/)
 
 ## Technology used
 

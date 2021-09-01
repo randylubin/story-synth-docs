@@ -1,6 +1,6 @@
 # Formats and Templates
 
-Story Synth currently has six different game formats, each with their own template you can use. Here’s an overview of each format, its influences, and a link to the template spreadsheet.
+Story Synth has several different game formats, each with their own template you can use. Here’s an overview of each format, its influences, and a link to the template spreadsheet.
 
 ## Shuffled
 
@@ -90,3 +90,24 @@ Key options:
 - styleTemplate – use this to specify an existing style template. Options: cyberpunk, vaporwave, fantasy, dark, light.
 - showSummary – let players switch from grid view to the concise Summary View
 - showFullLists – let players switch from grid view to Full List View, which shows all possible options per category
+
+## Hexflower
+
+[Hexflower Template Spreadsheet](https://docs.google.com/spreadsheets/d/1wLDboZZBfBwMKswMYcRIXxz6DxRZJyAa6KPW6TvR-dM/edit?usp=sharing)
+[Hexflower Demo](https://storysynth.org/Hexflower/1wLDboZZBfBwMKswMYcRIXxz6DxRZJyAa6KPW6TvR-dM/)
+
+The Hexflower format creates a grid of hexagons in the shape of a larger hexagon. Each hex contains a summary and is clickable. Clicked hexes can have additional information displayed below the Hexflower by using the fullContent column.
+
+You can use the background column to specify a backgaround image or css webcolor name or color code (e.g. #ABC123). There's a [hex image template for Affinity Designer](https://github.com/randylubin/Story-Synth/blob/master/public/img/hex-background-template.afdesign), make sure to hide the grey guides before you export. Use a service like [https://freeimage.host/](https://freeimage.host/) to host your image and then paste the image url in the sheet.
+
+You can also control the probability weighting for each hex's movement, making it more or less likely for it to move to specific adjacent hexes – see the note in the sheet for more information.
+
+Key options:
+
+- hexOrientation – set to flatTop (default) or pointyTop to change the orientation of the hexes by 90 degrees
+- hexWarp – set to TRUE if you want random movement to be possible off the edges of the hex flower and wrapping back around (wraps are only vertical or diagonal)
+- randomizeHexes – set to randomNoCopies to have one of each hex but in a random location set to randomWithCopies if you want to repeatedly select randomly from teh entire list of hex options
+- startingHex – (for random options) if used, the set number of the intial hex location that's selected on hex generation, otherwise the starting location is random
+- startingHexFixedTile – (for random options) set to TRUE if you want the starting hex tile tile to have the same information each time (must be used with startingHex)
+
+Hexflowers were popularized by [Goblin’s Henchman](https://goblinshenchman.wordpress.com/hex-power-flower/) and the [Hex Flower Cookbook](https://www.drivethrurpg.com/product/295083/Hex-Flower-Cookbook--an-overview-and-some-thoughts-on-Hex-Flower-Game-Engines-by-Goblins-Henchman) has plenty of examples and thoughts on how to make and use Hexflowers. I also recommend checking out Emily Short’s blog post on [Narrative States](https://emshort.blog/2019/11/23/narrative-states/) as she has great insights on interactive fiction that translate well to Hexflowers.

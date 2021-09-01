@@ -127,6 +127,14 @@ This will place a progress bar above the prompts during the instructions round (
 | ------------ | ----------------------- | --------------------- |
 | option       | instructionsProgressBar | 14                    |
 
+### Facilitator Mode
+
+For Shuffled format, add the option line facilitatorMode and it will make it so only people at the facilitator link will be able to change cards and reset the game; other players will only be able to observe. The facilitator link ends in `facilitator` and will be generated from the game launcher. The player link will end in `player` and be copyable from the top of the game page.
+
+| First Column | Extension Name  | Example Customization |
+| ------------ | --------------- | --------------------- |
+| option       | facilitatorMode | TRUE                  |
+
 ### Card Counter
 
 You can use displayCardCount to show the total number of cards drawn by the players in the Shuffled format. The value of the option indicates the first card that you want to include in the count – probably the first non-instruction card.
@@ -174,6 +182,16 @@ This is for the Shuffled Format only and replaces the 'Last Card' button with a 
 | First Column | Extension Name     | Example Customization |
 | ------------ | ------------------ | --------------------- |
 | option       | showNextDeckButton | Next Act              |
+
+### Cards Drawn Per Deck
+
+For Shuffled format, if you're using multiple decks, you can specify how many cards you want drawn from each deck before automatically advancing to the next deck. The custom field should be a list of numbers separated by commas (no spaces). The numbers indicate the number of cards you want to draw from each deck (not including the instructions). Note: if you use this option, you'll need a number for each deck after the instructions.
+
+| First Column | Extension Name    | Example Customization |
+| ------------ | ----------------- | --------------------- |
+| option       | cardsDrawnPerDeck | 3,5,2,1               |
+
+In the above example, players will see all of the instructions followed by 3 cards from the first deck, 5 cards from the second deck, 2 cards from the 3rd deck, and 1 card from the forth deck.
 
 ### Reversable Cards
 
