@@ -109,5 +109,7 @@ Key options:
 - randomizeHexes – set to randomNoCopies to have one of each hex but in a random location set to randomWithCopies if you want to repeatedly select randomly from teh entire list of hex options
 - startingHex – (for random options) if used, the set number of the intial hex location that's selected on hex generation, otherwise the starting location is random
 - startingHexFixedTile – (for random options) set to TRUE if you want the starting hex tile tile to have the same information each time (must be used with startingHex)
+- fogOfWar – some hexes start hidden and are only revealed when you move either onto them (revealOnMove) or next to them (revealNeighbors)
+- initiallyVisible – sets which hexes start visible in fogOfWar
 
 Hexflowers were popularized by [Goblin’s Henchman](https://goblinshenchman.wordpress.com/hex-power-flower/) and the [Hex Flower Cookbook](https://www.drivethrurpg.com/product/295083/Hex-Flower-Cookbook--an-overview-and-some-thoughts-on-Hex-Flower-Game-Engines-by-Goblins-Henchman) has plenty of examples and thoughts on how to make and use Hexflowers. I also recommend checking out Emily Short’s blog post on [Narrative States](https://emshort.blog/2019/11/23/narrative-states/) as she has great insights on interactive fiction that translate well to Hexflowers.

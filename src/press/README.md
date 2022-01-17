@@ -17,7 +17,6 @@ Key points:
 - Design involves editing content in Google Sheets and then sharing the sheet link; Story Synth then instantly, automatically generates the game
 - Story Synth has real-time multiplayer, like Jackbox games, so players see the same content at the same time; it works equally well on desktop and mobile browsers
 - Story Synth supports an array of formats and custom features and has been used to create dozens of games
-- [Story Synth Summer Jam](https://itch.io/jam/story-synth-summer-jam) is happening through the end of August
 
 <div class="embed-responsive embed-responsive-16by9 mb-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/FqfBcB4iZEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -45,11 +44,11 @@ Designers have already created dozens of games through Story Synth. You can chec
 
 Story Synth has also been used in games design courses as an easy tool for beginner designers. New York University (NYU), Fordham University, and University of the Sunshine Coast (USC).
 
-## Story Synth Summer Jam
+<!-- ## Story Synth Summer Jam
 
 ![Story Synth Summer Jam logo](https://diegeticgames.com/uploads/story-synth-summer-jam-website-promo.png)
 
-[The Story Synth Summer Jam](https://itch.io/jam/story-synth-summer-jam) is running from June through August 2021 and designers can submit games on any topic. There's plenty of help available to anyone who needs it and jam participants can request new features and formats.
+[The Story Synth Summer Jam](https://itch.io/jam/story-synth-summer-jam) is running from June through August 2021 and designers can submit games on any topic. There's plenty of help available to anyone who needs it and jam participants can request new features and formats. -->
 
 ## Visual Assets
 

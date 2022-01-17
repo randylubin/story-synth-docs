@@ -111,6 +111,14 @@ These options let you set a background image for your cards. If you just use 'ca
 
 ## Buttons, Modals, and More
 
+### Menu Button Color
+
+The default color for the menu buttons (the hamburger menu and the click for URL button) is dark grey but you can override it with a color name or hexcode.
+
+| First Column | Extension Name | Example Customization |
+| ------------ | -------------- | --------------------- |
+| option       | menuColor      | white                 |
+
 ### Hide Headers
 
 The Shuffled format has headers on each card but you might not need them. If you'd like them to be hidden, use the hideHeadersOnCards option.
@@ -134,6 +142,14 @@ For Shuffled format, add the option line facilitatorMode and it will make it so 
 | First Column | Extension Name  | Example Customization |
 | ------------ | --------------- | --------------------- |
 | option       | facilitatorMode | TRUE                  |
+
+### Hide Navigation Buttons
+
+Use this option to hide the navigation buttons (previous, next, last) in the Shuffled format. If you set to TRUE, then the buttons will never appear. If you set to a number, then the (previous, next) navigtion buttons will disappear starting on that card – the Last Card button won't appear at all.
+
+| First Column | Extension Name        | Example Customization |
+| ------------ | --------------------- | --------------------- |
+| option       | hideNavigationButtons | TRUE                  |
 
 ### Card Counter
 
@@ -214,7 +230,7 @@ This lets you relable the safety button and card text from the defaults for the 
 
 Modals are pop-ups or overlays on the screen. You may want to use these as a quick reference for the instructions, setting, or characters.
 
-You can have one or two modals and you can change the lable on the buttons. You can use HTML and CSS within the modal text.
+The links to the modals will appear in the dropdown menu. You can have one or two modals and you can change the lable of the link. You can use HTML and CSS within the modal text.
 
 | First Column | Extension Name | Example Customization              |
 | ------------ | -------------- | ---------------------------------- |
@@ -238,3 +254,13 @@ The two key options at the moment are:
 | option       | ogImageSquare   | https://diegeticgames.com/uploads/card-bottom-wave2.png |
 
 Further, you'll need to Randy know by emailing him a link to your game: <unfurl@storysynth.org>
+
+## Miscellaneous
+
+### Debug Loading
+
+If you're having issues with Story Synth loading properly, use this option to show which API call is failing and display any error message.
+
+| First Column | Extension Name | Example Customization |
+| ------------ | -------------- | --------------------- |
+| option       | debugLoading   | TRUE                  |

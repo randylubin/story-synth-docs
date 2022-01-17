@@ -83,6 +83,18 @@ Story Synth pulls the current data from your spreadsheet every time you reload t
 
 If you’ve followed the steps above, you can now create and share your own games on Story Synth.
 
+### Sharing your game via Itch.io
+
+Story Synth games don't have downloadable files but you can still publish them to Itch, and even charge for them. Here's how:
+
+1. Set classification to 'Physical games' – despite being a digital game, Story Synth has much more in common with tabletop roleplaying games
+2. Set 'Kind of Project' to downloadable
+3. Under Uploads, create an External File as executable and set the URL to game's page on Story Synth.
+
+Then just create the game's Itch page like you would for any other game. For an example Itch page of a Story Synth game, check out Around the Realm.
+
+### Going Further
+
 If you want to publish your game on it's own website, using the Story Synth code, check out the [How to Publish](/guide/publish.html) guide.
 
 If you want to extend Story Synth to add new mechanics, check out [How to Extend](/guide/extend.html) guide.
@@ -114,6 +126,8 @@ For example, if I wanted to use the [Sloth icon](https://game-icons.net/1x1/caro
     style="filter: invert(54%) sepia(39%) saturate(4559%) hue-rotate(160deg) brightness(93%) contrast(101%);"
   >
 ```
+
+If you want to embed the image in a Hexflower hex, then also set `width: 44px` in the style.
 
 <img
 src="https://storysynth.org/img/game-icons/transparent/1x1/caro-asercion/sloth.svg"

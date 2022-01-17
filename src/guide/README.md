@@ -16,7 +16,7 @@ There are a few key features:
 
 You can see the templates in action (with placeholder content) at [storysynth.org](https://storysynth.org/).
 
-Visit [Dawn of the Monster Invasion](http://monster.diegeticgames.com/) for example of a published game that runs on Story Synth.
+Try [Around the Realm](https://storysynth.org/Games/Around-The-Realm/) for an example of a published game that runs on Story Synth.
 
 Check out the [repository on GitHub](https://github.com/randylubin/Story-Synth) to explore and download the codebase.
 

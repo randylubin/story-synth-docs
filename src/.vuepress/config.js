@@ -18,7 +18,17 @@ module.exports = {
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    // ['meta', { name: 'title', content: 'Story Synth Documentation' }],
+    ['meta', { name: 'og-title', content: 'Story Synth Documentation' }],
+    // ['meta', { name: 'description', content: 'The guide and documentation for designing storytelling games with Story Synth' }],
+    ['meta', { name: 'og-description', content: 'The guide and documentation for designing storytelling games with Story Synth'}],
+    ['meta', { name: 'og:image', content: 'https://storysynth.org/img/story-synth-square-logo.gif'}],
+    ['meta', { name: 'og:url', content: 'https://docs.storysynth.org' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'og:site_name', content: 'Story Synth Documentation' }],
+    ['meta', { name: 'twitter:image:alt', content: 'Story Synth Logo'}],
+    ['meta', { name: 'monetization', content: '$ilp.uphold.com/WMbkRBiZFgbx' }]
   ],
 
   /**

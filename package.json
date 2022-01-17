@@ -1,7 +1,7 @@
 {
   "name": "story-synth-docs",
   "version": "0.0.1",
-  "description": "How to design, publish with the storytelling game platform",
+  "description": "How to design and publish games with the Story Synth storytelling game platform",
   "main": "index.js",
   "authors": {
     "name": "Randy Lubin",

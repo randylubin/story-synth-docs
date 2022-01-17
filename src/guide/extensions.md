@@ -1,6 +1,6 @@
 # Extensions
 
-Story Synth extensions add extra functionality to existing formats. They are entirely optional and some are customizable. Included extensions will appear above the main area of play.
+Story Synth extensions add extra functionality to existing formats. They are entirely optional and some are customizable.
 
 To see many of the extensions in action, check out the [sandbox demo](https://storysynth.org/#/Sandbox/1wkNipcFfxrKAfyEIppifGLjjjbkwVJLEwcKmvq3s5zs)
 
@@ -11,6 +11,12 @@ Extensions are currently only enabled for the 'Shuffled' format
 
 Some of these extensions require you to write content in JSON. These extensions may be updated in the near future to become more designer friendly.
 :::
+
+Included extensions will appear below the the main area of play by default, though you can set individual ones to appear above by adding a row based on the extension name + 'Location' and setting it to 'upper'. For example:
+
+| First Column | Extension Name    | Example Customization |
+| ------------ | ----------------- | --------------------- |
+| extension    | staticBoxLocation | upper                 |
 
 Here's a list of all available extensions:
 
@@ -41,6 +47,8 @@ You can use playerTurnOrderFirstVisible to hide the player turn order extension 
 
 The optional row of playerTurnOrderHeader lets you rename the header for this section and playerTurnOrderButtonLabel lets you overwrite the button text.
 
+You can also choose to have a current player header above the main game by using the extension currentPlayerHeader and having the customization contain the text that precedes the player's name.
+
 ### Player Turn Example
 
 ::: warning Note
@@ -53,6 +61,7 @@ You must put '{}' in the third column of playerTurnOrder. And you must use playe
 | extension    | playerTurnOrderFirstVisible | 8                     |
 | extension    | playerTurnOrderHeader       | Turn Turn Turn        |
 | extension    | playerTurnOrderButtonLabel  | Add me                |
+| extension    | currentPlayerHeader         | Current player:       |
 
 ## Plus Minus
 
@@ -141,3 +150,20 @@ You can include the standard card deck by copying the example below. You can edi
 | ------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | extension    | standardDeckTitle | Standard Deck                                                                                                                                                                                                                                                                                          |
 | extension    | playerTurnOrder   | {"fullDeck":["2♡","3♡","4♡","5♡","6♡","7♡","8♡","9♡","10♡","J♡","Q♡","K♡","A♡","2♢","3♢","4♢","5♢","6♢","7♢","8♢","9♢","10♢","J♢","Q♢","K♢","A♢","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣","A♣","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠","A♠"],"drawnCards":[]} |
+
+## Journal Entries
+
+Use this extension to let your players write journal entries. The default text at the top of it will say Journal Entries but you can use 'journalUpperText' to override it with any label and instructions that you want. You can add some initial entries by customizing journalEntries with an Array of entries: `['entry one', 'two', 'three']` or just put `[]` to have it start blank.
+
+| First Column | Extension Name   | Example Customization |
+| ------------ | ---------------- | --------------------- |
+| extension    | journalEntries   | []                    |
+| extension    | journalTextUpper | Log Files             |
+
+## Hexflower as Extension
+
+This extension lets you embed an entire Hexflower game within a different format. Just create an additional spreadsheet for your Hexflower and paste it into the extension customization details.
+
+| First Column | Extension Name       | Example Customization                                                                                |
+| ------------ | -------------------- | ---------------------------------------------------------------------------------------------------- |
+| extension    | hexflowerAsExtension | https://docs.google.com/spreadsheets/d/19zYQMLvhgv3CtpMpNIpj5GAaY_lRsF_pF6q1UqVF4Bg/edit?usp=sharing |
