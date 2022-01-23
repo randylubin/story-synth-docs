@@ -62,8 +62,8 @@ Now you can click “Copy link” which gives you the shareable URL. It should l
 
 You’re now ready to connect your game to Story Synth:
 
-1. Go to storysynth.org
-2. Select the template you’re using from “Game Format” drdown list
+1. Go to [https://storysynth.org/Upload/](https://storysynth.org/Upload/)
+2. Select the template you’re using from “Game Format” dropdown list
 3. Paste in your game spreadsheet’s URL in the “Sheet” field
 4. Click “Create Game” to go to a page that can launch new sessions of your game
 

@@ -67,6 +67,7 @@ module.exports = {
             'formats',
             'options',
             'extensions',
+            'monetize',
             'publish',
             'extend',
           ]

@@ -9,6 +9,14 @@
     />
 </video>
 
+Website: [storysynth.org](https://storysynth.org)
+
+Email: [info@storysynth.org](mailto:info@storysynth.org)
+
+Twitter: [@storysynth](https://twitter.com/storysynth)
+
+Creator: [Randy Lubin](https://randylubin.com)
+
 ## About Story Synth
 
 Key points:
@@ -36,7 +44,7 @@ Story Synth supports a variety of formats that involve different ways of organiz
 
 Designers have already created dozens of games through Story Synth. You can check out some of the top games in the [Story Synth Gallery](https://storysynth.org/Gallery/).
 
-![Story Synth Games Collage](https://diegeticgames.com/uploads/story-synth-game-collage.png)
+![Story Synth Games Collage](https://storysynth.org/img/story-synth-gallery-banner.png)
 
 **Example Game**: [Around the Realm](https://storysynth.org/Games/Around-The-Realm/), by Randy Lubin, is a fantasy take on "Around the World In 80 Days" – players tell the whimsical story of two companions who are racing around a magical archipelago in an attempt to win a wager. The lands are full of magic, danger, and adventure – will they make it back in time?
 

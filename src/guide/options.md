@@ -41,7 +41,7 @@ This will show up on the game launcher page, underneath the Title and Byline, if
 
 ### Monetiziation
 
-You can add monetization to your site via the web monetization protocol. See [this blog](https://blog.randylubin.com/playing-around-with-the-web-monetization-protocol) for more details on WMP and getting a wallet.
+You can add monetization to your site via the web monetization protocol. See [the monetization page](/monetize) for more details on WMP and getting a wallet.
 
 The option 'wallet' sets your wallet address and the addional option 'revShare' sets the percentage that gets shared with Story Synth. If you leave out 'revShare' it will default to 20% shared with Story Synth. In the example below, 0.2 is translated as 20%.
 
@@ -198,6 +198,14 @@ This is for the Shuffled Format only and replaces the 'Last Card' button with a 
 | First Column | Extension Name     | Example Customization |
 | ------------ | ------------------ | --------------------- |
 | option       | showNextDeckButton | Next Act              |
+
+### Treat 'Last Card' Button as 'Last Deck'
+
+This is for Shuffle Format and will cause the 'Last Card' button to send the players to the first card of the Last Deck instead. The last card shuffle buttons will not be visible.
+
+| First Column | Extension Name          | Example Customization |
+| ------------ | ----------------------- | --------------------- |
+| option       | treatLastCardAsLastDeck | TRUE                  |
 
 ### Cards Drawn Per Deck
 
