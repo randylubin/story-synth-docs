@@ -11,7 +11,6 @@ Example:
 | option | gameTitle | Around the Realm |
 | ------ | --------- | ---------------- |
 
-
 ## Metadata Options
 
 ### Game Title
@@ -52,6 +51,16 @@ The option 'wallet' sets your wallet address and the addional option 'revShare' 
 
 ## Visual Style
 
+### Style Templates
+
+The 'styleTemplate' option lets you use existing style template. Options: cyberpunk, vaporwave, fantasy, dark, light.
+
+| First Column | Extension Name | Example Customization         |
+| ------------ | -------------- | ----------------------------- |
+| option       | styleTemplate  | cyberpunk                     |
+
+### CSS Styling
+
 The 'style' option is the place to use CSS to modify the visual style of the game launcher and session pages. Any CSS must be placed inside `<style> </style>` tags.
 
 | First Column | Extension Name | Example Customization                                                   |
@@ -65,6 +74,8 @@ Here are some classes you may want to apply CSS to:
 - .game-room – all game material is contained in this element; use it to update fonts and text color
 - .card – this class is applied to all game cards, use it to change the card background
 - .btn, .input – all buttons used on the page
+
+Check out the [CSS Tutorial](https://docs.storysynth.org/tutorials/styling.html) for a step-by-step guide to working with CSS in Story Synth.
 
 ## Game Launcher
 
@@ -236,9 +247,9 @@ This lets you relable the safety button and card text from the defaults for the 
 
 ### Modals
 
-Modals are pop-ups or overlays on the screen. You may want to use these as a quick reference for the instructions, setting, or characters.
+Modals are pop-ups or overlays on the screen. You may want to use these as a quick reference for the instructions, setting, or characters. Modals are available in every format.
 
-The links to the modals will appear in the dropdown menu. You can have one or two modals and you can change the lable of the link. You can use HTML and CSS within the modal text.
+The links to the modals will appear in the dropdown menu. You can have one or two modals and you can change the lable of the link. You can use [Markdown](https://www.markdownguide.org/basic-syntax/), HTML and CSS within the modal text.
 
 | First Column | Extension Name | Example Customization              |
 | ------------ | -------------- | ---------------------------------- |
@@ -246,6 +257,8 @@ The links to the modals will appear in the dropdown menu. You can have one or tw
 | option       | modalOneText   | Here's an instructions recap...    |
 | option       | modalTwoLabel  | Settings                           |
 | option       | modalTwoText   | Here's some info on the setting... |
+
+This patter continues for `modalThreeText`, `modalFourText`, and `modalFiveText`.
 
 ## Unfurl
 

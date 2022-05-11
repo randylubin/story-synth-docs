@@ -109,12 +109,12 @@ If you want to get fancier and have a gradient background, there are websites li
 
 Changing the font can go a long way toward making your game's style feel right. [Google Fonts](https://fonts.google.com/) has tons of free font options you can use.
 
-To add a font to your game, you need to include a link just before your style tag. you can copy the link line from the example below and change the family name from "IM+Fell+English" to the font of your choice. Also make sure to update the Font-Family value for the right selector.
+To add a font to your game, you need to include a @import line just before your style tag. you can copy the import line from the example below and change the family name from "IM+Fell+English" to the font of your choice. Also make sure to update the Font-Family value for the right selector.
 
 ```
-<link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
-
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+
   #app {Font-Family: 'IM Fell English', Serif;}
 </style>
 ```

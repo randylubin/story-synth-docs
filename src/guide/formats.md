@@ -2,6 +2,10 @@
 
 Story Synth has several different game formats, each with their own template you can use. Here’s an overview of each format, its influences, and a link to the template spreadsheet.
 
+[Video Tour](https://youtu.be/nb5_3ErDZoI) of formats.
+
+<div class="embed-responsive embed-responsive-16by9 mb-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/nb5_3ErDZoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 ## Shuffled
 
 [Shuffled Template Spreadsheet](https://docs.google.com/spreadsheets/d/1N5eeyKTVWo5QeGcUV_zYtwtR0DikJCcvcj6w69UkC1w/edit?usp=sharing)
@@ -63,6 +67,8 @@ This format has:
 
 This format might be useful for those who want to generate random encounters, random locations, random characters, or a any other random prompts that are created from several categories.
 
+You can add one final card into deck '2' and it will show up after all of the randomly constructed cards.
+
 ## Phases
 
 [Phases Template Spreadsheet](https://docs.google.com/spreadsheets/d/1HataDfV2lrA4hfzmLgDjXH09dEMLQV6OT10tVH9G52A/edit?usp=sharing)
@@ -70,6 +76,8 @@ This format might be useful for those who want to generate random encounters, ra
 This format takes place over rounds, where each round has a series of phases that happen in order. For each phase, a prompt is drawn from the corresponding phase deck.
 
 A game about travel might use phases: new mode of transit, trouble on the road, new location, and trouble in location. In each round, each phase will be visited once in sequence and a random, relevant prompt will be show.
+
+Key options: numberOfRounds – sets how many rounds of phases before skipping to the end (ignores instruction cards in the count)
 
 ## Generator
 

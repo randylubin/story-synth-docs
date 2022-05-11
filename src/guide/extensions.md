@@ -28,10 +28,12 @@ Here's a list of all available extensions:
 | editableList     | A list that players can edit, adding and deleting items                                               |
 | diceRoller       | Players can roll dice by typing commands like '2d6'                                                   |
 | standardDeck     | A way of drawing from a deck of playing cards                                                         |
+| journalEntries     | A place to log notes and journal entries |
+| hexflowerAsExtension     | Embed an entire Hexflower within a different format |
 
 ## Static Box
 
-This extension adds a box of static text to the top of your game. It might be useful as a rules summary or for a setting description. An alternative approach is to use a modal rather than an extension. Read more about modals under [customizing your game](http://localhost:8080/guide/design.html#_3-customize-the-style-title-and-byline-and-blurb).
+This extension adds a box of static text to the top of your game. It might be useful as a rules summary or for a setting description. You can use [Markdown](https://www.markdownguide.org/basic-syntax/) and HTML in the box. An alternative approach is to use a modal rather than an extension. Read more about modals under [customizing your game](http://localhost:8080/guide/design.html#_3-customize-the-style-title-and-byline-and-blurb).
 
 ### Static Box Example
 
@@ -109,6 +111,7 @@ In this case, the data should have be an array of objects with each object havin
 | First Column | Extension Name     | Example Customization                                                                                                       |
 | ------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | extension    | multiEditableLists | [{"name": "Locations", "value": ["The Docks", "The Market"]},{"name": "Allies", "value": ["The Governer", "The Smuggler"]}] |
+| extension | multiEditableListsFirstVisible | 5 |
 
 ## Dice Roller
 
@@ -149,16 +152,20 @@ You can include the standard card deck by copying the example below. You can edi
 | First Column | Extension Name    | Example Customization                                                                                                                                                                                                                                                                                  |
 | ------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | extension    | standardDeckTitle | Standard Deck                                                                                                                                                                                                                                                                                          |
-| extension    | playerTurnOrder   | {"fullDeck":["2♡","3♡","4♡","5♡","6♡","7♡","8♡","9♡","10♡","J♡","Q♡","K♡","A♡","2♢","3♢","4♢","5♢","6♢","7♢","8♢","9♢","10♢","J♢","Q♢","K♢","A♢","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣","A♣","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠","A♠"],"drawnCards":[]} |
+| extension    | standardDeck   | {"fullDeck":["2♡","3♡","4♡","5♡","6♡","7♡","8♡","9♡","10♡","J♡","Q♡","K♡","A♡","2♢","3♢","4♢","5♢","6♢","7♢","8♢","9♢","10♢","J♢","Q♢","K♢","A♢","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣","A♣","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠","A♠"],"drawnCards":[]} |
 
 ## Journal Entries
 
-Use this extension to let your players write journal entries. The default text at the top of it will say Journal Entries but you can use 'journalUpperText' to override it with any label and instructions that you want. You can add some initial entries by customizing journalEntries with an Array of entries: `['entry one', 'two', 'three']` or just put `[]` to have it start blank.
+Use this extension to let your players write journal entries. The default text at the top of it will say Journal Entries but you can use 'journalUpperText' to override it with any label and instructions that you want. You can add some initial entries by customizing journalEntries with an Array of entries: `["entry one", "two", "three"]` or just put `[]` to have it start blank. You can use [Markdown](https://www.markdownguide.org/basic-syntax/) in the journal entries.
+
+By default, journal entries are sorted from newest at the top to oldest at the bottom. You can have the oldest at the top by specifying 'journalOrder' to be `oldestFirst`.
 
 | First Column | Extension Name   | Example Customization |
 | ------------ | ---------------- | --------------------- |
 | extension    | journalEntries   | []                    |
-| extension    | journalTextUpper | Log Files             |
+| extension    | journalUpperText | Log Files             |
+| extension | journalOrder | oldestFirst |
+| extension | journalFirstVisible | 5 |
 
 ## Hexflower as Extension
 
@@ -167,3 +174,11 @@ This extension lets you embed an entire Hexflower game within a different format
 | First Column | Extension Name       | Example Customization                                                                                |
 | ------------ | -------------------- | ---------------------------------------------------------------------------------------------------- |
 | extension    | hexflowerAsExtension | https://docs.google.com/spreadsheets/d/19zYQMLvhgv3CtpMpNIpj5GAaY_lRsF_pF6q1UqVF4Bg/edit?usp=sharing |
+
+## Generator as Extension
+
+This extension lets you embed an entire Generator game within a different format. Just create an additional spreadsheet for your Generator and paste it into the extension customization details.
+
+| First Column | Extension Name       | Example Customization                                                                                |
+| ------------ | -------------------- | ---------------------------------------------------------------------------------------------------- |
+| extension    | generatorAsExtension | https://docs.google.com/spreadsheets/d/19zYQMLvhgv3CtpMpNIpj5GAaY_lRsF_pF6q1UqVF4Bg/edit?usp=sharing |

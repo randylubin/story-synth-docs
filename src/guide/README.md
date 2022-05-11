@@ -63,7 +63,9 @@ This means Story Synth is serverless and completely free at moderate usage.
 
 ## Licensing
 
-Story Synth is open source and published under the extremely permissive [MIT license](https://github.com/randylubin/Story-Synth/blob/master/LICENSE), meaning you can do almost whatever you want with it.
+Anyone designing or sharing games through Story Synth retains all rights to their works.
+
+The Story Synth codebase is open source and published under the extremely permissive [MIT license](https://github.com/randylubin/Story-Synth/blob/master/LICENSE), meaning you can do almost whatever you want with it.
 
 There’s no need to cite Story Synth in your game or on your webpage, though credit is always welcome!
 

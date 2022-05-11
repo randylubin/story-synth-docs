@@ -23,7 +23,7 @@ Open the spreadsheet that best fits your game and then make a copy of it: **File
 
 Each template contains instructions, embedded as notes in the first row – the row containing the column headers. Don’t edit or change the first row unless specifically instructed.
 
-Add your game’s content to the spreadsheet in the appropriate locations. Some of the columns allow for HTML - for those cells, you can embed links, images, and even css style code.
+Add your game’s content to the spreadsheet in the appropriate locations. Some of the columns allow for HTML and [Markdown](https://www.markdownguide.org/basic-syntax/) - for those cells, you can embed links, images, and even css style code.
 
 You can add or delete rows to match the length of your game.
 
