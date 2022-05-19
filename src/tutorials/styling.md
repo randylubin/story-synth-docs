@@ -1,6 +1,6 @@
 # Styling with CSS
 
-You can use CSS to customize Story Synth's style to fit your game. This guide will walk you through some of the basics, assuming that you don't know any CSS (or any code at all).
+You can use CSS to customize Story Synth's style to fit your game. This guide will walk you through some of the basics, assuming that you don't know any CSS (or any code at all). If you want to experiment as you learn, check out the [CSS Playground](https://storysynth.org/CSS-Playground/), where you can see the impact of your code, in real time!
 
 ## What's CSS?
 
@@ -109,7 +109,7 @@ If you want to get fancier and have a gradient background, there are websites li
 
 Changing the font can go a long way toward making your game's style feel right. [Google Fonts](https://fonts.google.com/) has tons of free font options you can use.
 
-To add a font to your game, you need to include a @import line just before your style tag. you can copy the import line from the example below and change the family name from "IM+Fell+English" to the font of your choice. Also make sure to update the Font-Family value for the right selector.
+To add a font to your game, you need to include a @import line just after your style tag. you can copy the import line from the example below and change the family name from "IM+Fell+English" to the font of your choice. Also make sure to update the Font-Family value for the right selector.
 
 ```
 <style>

@@ -167,6 +167,17 @@ By default, journal entries are sorted from newest at the top to oldest at the b
 | extension | journalOrder | oldestFirst |
 | extension | journalFirstVisible | 5 |
 
+## Embed a Webpage
+
+This extension lets you embed a webpage within your Story Synth game. You can specify to have a fixed webpage always embed via `hardcodedWebsiteURL` or you can specify instructions for players to add a page via `embedWebsiteMessage`. The latter is helpful if you want players to embed a Google Doc, perhaps a copy of a template doc that you've created.
+
+Note - due to website security measures, not all webpages are capable of being embedded. Test out the page you want before finishing your game.
+
+| First Column | Extension Name   | Example Customization |
+| ------------ | ---------------- | --------------------- |
+| extension    | embedWebsiteMessage   | Add a link to a Google Doc to take notes                    |
+| extension    | hardcodedWebsiteURL | https://example.com |
+
 ## Hexflower as Extension
 
 This extension lets you embed an entire Hexflower game within a different format. Just create an additional spreadsheet for your Hexflower and paste it into the extension customization details.

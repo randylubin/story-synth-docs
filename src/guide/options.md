@@ -40,7 +40,7 @@ This will show up on the game launcher page, underneath the Title and Byline, if
 
 ### Monetiziation
 
-You can add monetization to your site via the web monetization protocol. See [the monetization page](/monetize) for more details on WMP and getting a wallet.
+You can add monetization to your site via the web monetization protocol. See [the monetization page](/monetize) for more details on WMP and getting a wallet, as well as several other options that add features depending on if at least one players is paying.
 
 The option 'wallet' sets your wallet address and the addional option 'revShare' sets the percentage that gets shared with Story Synth. If you leave out 'revShare' it will default to 20% shared with Story Synth. In the example below, 0.2 is translated as 20%.
 
@@ -61,7 +61,7 @@ The 'styleTemplate' option lets you use existing style template. Options: cyberp
 
 ### CSS Styling
 
-The 'style' option is the place to use CSS to modify the visual style of the game launcher and session pages. Any CSS must be placed inside `<style> </style>` tags.
+The 'style' option is the place to use CSS to modify the visual style of the game launcher and session pages. Any CSS must be placed inside `<style> </style>` tags. Don't include anything before the opening `<style>` tag or it will break the code.
 
 | First Column | Extension Name | Example Customization                                                   |
 | ------------ | -------------- | ----------------------------------------------------------------------- |
@@ -76,6 +76,8 @@ Here are some classes you may want to apply CSS to:
 - .btn, .input – all buttons used on the page
 
 Check out the [CSS Tutorial](https://docs.storysynth.org/tutorials/styling.html) for a step-by-step guide to working with CSS in Story Synth.
+
+The easiest way to get started is by playing around in the [CSS Playground](https://storysynth.org/CSS-Playground/) where you can autogenerate CSS by picking colors from a menu.
 
 ## Game Launcher
 
@@ -103,13 +105,16 @@ Right now the license will have a call to remix next to it. If you are sharing u
 
 ### Cover Image
 
-This option lets you use a cover image. The cover shows up on the game launcher page as well as on the first card of the instructions for formats that have cards. It will overwrite the contents of that first card (e.g. any instruction text) so leave a placeholder title in the row for that card.
+This option lets you use a cover image. The cover shows up on the game launcher page as well as on the first card of the instructions for formats that have cards. By default, it will overwrite the contents of that first card (e.g. any instruction text) so leave a placeholder title in the row for that card.
 
 The customization should just be the URL for your image. If you need a site to host your image, try [Free Image Host](https://freeimage.host/).
+
+If you only want the cover image showing up on the game launcher page and not in the session itself, you can use the option `noCoverImageInSession` and it will just show the first card of deck '0' like normal. In this case, the other players (who didn't launch the session) will never see the cover.
 
 | First Column | Extension Name | Example Customization                                               |
 | ------------ | -------------- | ------------------------------------------------------------------- |
 | option       | coverImage     | https://diegeticgames.com/uploads/around-the-realm-cover-narrow.png |
+| option | noCoverImageInSession | TRUE |
 
 ### Card Background Image
 
