@@ -2,11 +2,13 @@
 
 Story Synth is in the process of adding new monetization functionality.
 
-Currently you can add a web monetization wallet so that users of [Coil](https://coil.com/) will send a stream of micropayments to you as they play.
+Currently you can add a web monetization wallet so that users of [Coil](https://coil.com/) will send a (tiny) stream of micropayments to you, as they play.
+
+Another option is to sell your game elsewhere and provide users with a password using the [password custom option](https://docs.storysynth.org/guide/options.html#password).
 
 ## Getting a Wallet
 
-To set up this feature, first you need to get a wallet, to receive the payments. I use [Uphold](https://uphold.com/), which is free and easy to use.
+To set up this feature, first you need to get a wallet, to receive the payments. The current options are [GateHub](https://gatehub.net/) and [Uphold](https://uphold.com/) and more options will hopefully arrive soon.
 
 If you'd prefer to have the web monitization payments go to a social benefit organization instead of your personal wallet, you can use one of their payment pointers from this list: [non-profit payment pointers](https://community.webmonetization.org/grantfortheweb/non-profit-payment-pointers-2890)
 

@@ -254,7 +254,7 @@ This lets you relable the safety button and card text from the defaults for the 
 
 Modals are pop-ups or overlays on the screen. You may want to use these as a quick reference for the instructions, setting, or characters. Modals are available in every format.
 
-The links to the modals will appear in the dropdown menu. You can have one or two modals and you can change the lable of the link. You can use [Markdown](https://www.markdownguide.org/basic-syntax/), HTML and CSS within the modal text.
+The links to the modals will appear in the dropdown menu. You can have up to 20 modals and you can change the lable of the link. You can use [Markdown](https://www.markdownguide.org/basic-syntax/), HTML and CSS within the modal text.
 
 | First Column | Extension Name | Example Customization              |
 | ------------ | -------------- | ---------------------------------- |
@@ -263,7 +263,7 @@ The links to the modals will appear in the dropdown menu. You can have one or tw
 | option       | modalTwoLabel  | Settings                           |
 | option       | modalTwoText   | Here's some info on the setting... |
 
-This patter continues for `modalThreeText`, `modalFourText`, and `modalFiveText`.
+This patter continues for `modalThreeLabel` through `modalTwentyText`.
 
 ## Unfurl
 

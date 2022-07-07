@@ -7,8 +7,6 @@ To see many of the extensions in action, check out the [sandbox demo](https://st
 You can add an extension to your game by including a row in your Google Sheet with the proper instructions. The first column should say 'extension' the second should have the name of the extensions (e.g. 'diceRoller') and the third column should include any customized instructions.
 
 ::: warning Note
-Extensions are currently only enabled for the 'Shuffled' format
-
 Some of these extensions require you to write content in JSON. These extensions may be updated in the near future to become more designer friendly.
 :::
 
@@ -26,10 +24,13 @@ Here's a list of all available extensions:
 | playerTurnOrder  | A way of tracking player turns                                                                        |
 | plusMinus        | A state tracking system where players can increase or decrease the values of things they are tracking |
 | editableList     | A list that players can edit, adding and deleting items                                               |
+| multiEditableLists | A way to have multiple editable lists |
 | diceRoller       | Players can roll dice by typing commands like '2d6'                                                   |
 | standardDeck     | A way of drawing from a deck of playing cards                                                         |
 | journalEntries     | A place to log notes and journal entries |
-| hexflowerAsExtension     | Embed an entire Hexflower within a different format |
+| embedWebsiteMessage | Allow players to embed a webpage within their session |
+| hexflowerAsExtension     | Embed an entire Hexflower game within a different format |
+| generatorAsExtension     | Embed an entire Generator game within a different format |
 
 ## Static Box
 
@@ -113,6 +114,18 @@ In this case, the data should have be an array of objects with each object havin
 | extension    | multiEditableLists | [{"name": "Locations", "value": ["The Docks", "The Market"]},{"name": "Allies", "value": ["The Governer", "The Smuggler"]}] |
 | extension | multiEditableListsFirstVisible | 5 |
 
+## Coinflip
+
+This extension lets players flip a coin. If you set 'coinflip' to 'TRUE' then the coin will be 'heads' or 'tails' – if you want to customize the results text, you can set 'coinflip' to the text of the results seperated by a comma (e.g. 'yes,no' will result in a 'yes' or 'no'). You can optionally add a title to the extension and relable the button.
+
+### Coinflip example
+
+| First Column | Extension Name  | Example Customization                                              |
+| ------------ | --------------- | ------------------------------------------------------------------ |
+| extension    | coinflip | yes,no                                                        |
+| extension | coinflipTitle | Coin Flipper |
+| extension    | coinflipButtonLabel      | Click to flip |
+
 ## Dice Roller
 
 This extension lets players roll dice and shares the results across all players. Players can roll by typing the size and number of dice they want, separated by commas and spaces.
@@ -185,6 +198,7 @@ This extension lets you embed an entire Hexflower game within a different format
 | First Column | Extension Name       | Example Customization                                                                                |
 | ------------ | -------------------- | ---------------------------------------------------------------------------------------------------- |
 | extension    | hexflowerAsExtension | https://docs.google.com/spreadsheets/d/19zYQMLvhgv3CtpMpNIpj5GAaY_lRsF_pF6q1UqVF4Bg/edit?usp=sharing |
+| extension | hexflowerFirstVisible | 3 |
 
 ## Generator as Extension
 
