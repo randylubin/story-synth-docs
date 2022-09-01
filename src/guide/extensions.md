@@ -16,6 +16,13 @@ Included extensions will appear below the the main area of play by default, thou
 | ------------ | ----------------- | --------------------- |
 | extension    | staticBoxLocation | upper                 |
 
+If you're using your extensions with the Shuffled format, you can choose when they appear and disappear with the [extensionName]FirstVisible and [extensionName]LastVisible set to the card you want the extension to appear and disappear. Example:
+
+| First Column | Extension Name    | Example Customization |
+| ------------ | ----------------- | --------------------- |
+| extension    | playerTurnOrderFirstVisible | 3                 |
+| extension    | playerTurnOrderLastVisible | 12                |
+
 Here's a list of all available extensions:
 
 | Name             | Description                                                                                           |
@@ -26,6 +33,7 @@ Here's a list of all available extensions:
 | editableList     | A list that players can edit, adding and deleting items                                               |
 | multiEditableLists | A way to have multiple editable lists |
 | diceRoller       | Players can roll dice by typing commands like '2d6'                                                   |
+| coinflip       | Players can flip a coin (with custom results)                                     |
 | standardDeck     | A way of drawing from a deck of playing cards                                                         |
 | journalEntries     | A place to log notes and journal entries |
 | embedWebsiteMessage | Allow players to embed a webpage within their session |
@@ -116,7 +124,7 @@ In this case, the data should have be an array of objects with each object havin
 
 ## Coinflip
 
-This extension lets players flip a coin. If you set 'coinflip' to 'TRUE' then the coin will be 'heads' or 'tails' – if you want to customize the results text, you can set 'coinflip' to the text of the results seperated by a comma (e.g. 'yes,no' will result in a 'yes' or 'no'). You can optionally add a title to the extension and relable the button.
+This extension lets players flip a coin. If you set 'coinflip' to 'TRUE' then the coin will be 'heads' or 'tails' – if you want to customize the results text, you can set 'coinflip' to the text of the results seperated by a comma (e.g. 'yes,no' will result in a 'yes' or 'no'). You can optionally add a title to the extension and relable the button. You can also specify when it first appears with 'coinflipFirstVisible'.
 
 ### Coinflip example
 
