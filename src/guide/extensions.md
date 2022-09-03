@@ -29,6 +29,7 @@ Here's a list of all available extensions:
 | ---------------- | ----------------------------------------------------------------------------------------------------- |
 | staticBoxContent | A simple text box that is always visable                                                              |
 | playerTurnOrder  | A way of tracking player turns                                                                        |
+| imageGallery | Players can browse images and select one to focus on |
 | plusMinus        | A state tracking system where players can increase or decrease the values of things they are tracking |
 | editableList     | A list that players can edit, adding and deleting items                                               |
 | multiEditableLists | A way to have multiple editable lists |
@@ -73,6 +74,18 @@ You must put '{}' in the third column of playerTurnOrder. And you must use playe
 | extension    | playerTurnOrderHeader       | Turn Turn Turn        |
 | extension    | playerTurnOrderButtonLabel  | Add me                |
 | extension    | currentPlayerHeader         | Current player:       |
+
+## Image Gallery
+
+This extension lets players browse an image gallery and then select one image which remains visible for all players. You can change the name of the title of the gallery and add captions. Captions can take markdown formating and include links. The imageGallery and imageGalleryCaptions options take a list of urls or captions, separated by commas; that means you can't have a comma in the caption.
+
+Please ensure that your image usage complies with all copyright laws.
+
+| First Column | Extension Name              | Example Customization |
+| ------------ | --------------------------- | --------------------- |
+| extension    | imageGallery             | http://example.com/image1.jpg,http://example.com/image2.jpg,http://example.com/image3.jpg                    |
+| extension    | imageGalleryCaptions | caption one,**bold caption**,a caption with a \[link\]\(http://example.com\)                     |
+| extension    | imageGalleryTitle       | Image Gallery        |
 
 ## Plus Minus
 
