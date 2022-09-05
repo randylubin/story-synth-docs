@@ -263,7 +263,44 @@ The links to the modals will appear in the dropdown menu. You can have up to 20 
 | option       | modalTwoLabel  | Settings                           |
 | option       | modalTwoText   | Here's some info on the setting... |
 
-This patter continues for `modalThreeLabel` through `modalTwentyText`.
+This pattern continues for `modalThreeLabel` through `modalTwentyText`.
+
+### Chapter Navigation
+
+For Shuffled format, if you're using multiple decks, this option lets you create a menu of buttons that will navigate to any deck you specify. The buttons will appear in the dropdown menu.
+
+| First Column | Extension Name       | Example Customization |
+| ------------ | --------------       | --------------------- |
+| option       | chapter-1-label      | Beginning             |
+| option       | chapter-1-deckNumber | 1                     |
+| option       | chapter-2-label      | Middle                |
+| option       | chapter-2-deckNumber | 2                     |
+| option       | chapter-3-label      | End                   |
+| option       | chapter-3-deckNumber | 3                     |
+
+You can have any number of buttons, by continuing the pattern (e.g. `chapter-4-label` and `chapter-4-deckNumber`).
+
+You can make these buttons appear on the page, below the cards, in addition to appearing in the menu.
+
+| First Column | Extension Name        | Example Customization |
+| ------------ | --------------------- | --------------------- |
+| option       | showChapterNavOnPage  | TRUE                  |
+
+You can change the header that appears above the buttons. The default header is "Chapters".
+
+| First Column | Extension Name        | Example Customization |
+| ------------ | --------------------- | --------------------- |
+| option       | chapterNavHeader      | Sections              |
+
+In [facilitator mode](#facilitator-mode), chapter navigation buttons are hidden from players, and visible only to the facilitator.
+
+### Hide Last Card Options
+
+In Shuffled format, "Last Card Options" buttons appear by default in the menu. You can hide these. 
+
+| First Column | Extension Name        | Example Customization |
+| ------------ | --------------------- | --------------------- |
+| option       | hideLastCardOptions   | TRUE                  |
 
 ## Unfurl
 
