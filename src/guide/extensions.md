@@ -84,7 +84,7 @@ Please ensure that your image usage complies with all copyright laws.
 | First Column | Extension Name              | Example Customization |
 | ------------ | --------------------------- | --------------------- |
 | extension    | imageGallery             | http://example.com/image1.jpg,http://example.com/image2.jpg,http://example.com/image3.jpg                    |
-| extension    | imageGalleryCaptions | caption one,**bold caption**,a caption with a \[link\]\(http://example.com\)                     |
+| extension    | imageGalleryCaptions | caption one,\*\*bold caption\*\*,a caption with a \[link\]\(http://example.com\)                     |
 | extension    | imageGalleryTitle       | Image Gallery        |
 
 ## Plus Minus
