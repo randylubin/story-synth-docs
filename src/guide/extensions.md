@@ -77,7 +77,7 @@ You must put '{}' in the third column of playerTurnOrder. And you must use playe
 
 ## Image Gallery
 
-This extension lets players browse an image gallery and then select one image which remains visible for all players. You can change the name of the title of the gallery and add captions. Captions can take markdown formating and include links. The imageGallery and imageGalleryCaptions options take a list of urls or captions, separated by commas; that means you can't have a comma in the caption.
+This extension lets players browse an image gallery and then select one image which remains visible for all players. You can change the name of the title of the gallery and add captions. Captions can take markdown formating and include links. The imageGallery, imageGalleryCaptions, and imageGalleryAltText options take a list of urls or captions, separated by commas; that means you can't have a comma in the caption. If you have captions but not alt text, then the captions will be used as alt text.
 
 Please ensure that your image usage complies with all copyright laws.
 
@@ -85,7 +85,10 @@ Please ensure that your image usage complies with all copyright laws.
 | ------------ | --------------------------- | --------------------- |
 | extension    | imageGallery             | http://example.com/image1.jpg,http://example.com/image2.jpg,http://example.com/image3.jpg                    |
 | extension    | imageGalleryCaptions | caption one,\*\*bold caption\*\*,a caption with a \[link\]\(http://example.com\)                     |
+| extension | imageGalleryAltText | text one,text two,text three
 | extension    | imageGalleryTitle       | Image Gallery        |
+
+Here's a Google Sheet that can help with organzing all of your links, captions, and alt text: [Image Gallery Management Sheet](https://docs.google.com/spreadsheets/d/1I3dQ6KotBk6QEpXTxaU8uWL6pss3V0y46mkXkx_xeOo/edit?usp=sharing)
 
 ## Plus Minus
 
