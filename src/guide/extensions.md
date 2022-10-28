@@ -216,6 +216,46 @@ Note - due to website security measures, not all webpages are capable of being e
 | extension    | embedWebsiteMessage | Add a link to a Google Doc to take notes |
 | extension    | hardcodedWebsiteURL | https://example.com                      |
 
+## Interrupts
+
+This extension lets you create a set of cards that you can display at any time during your game, with the click of a button.
+
+This extension will generate a list of buttons on the game page, or optionally, in the menu. When one of the buttons is clicked, it will display your card until that card is closed.
+
+::: warning Note
+This extension was intitially designed and tested for the Shuffled format but should work well with other formats too. If you have any issues, please reach out.
+:::
+
+First, create your set of cards that can be displayed:
+
+- `interrupts` set to `TRUE` tells Story Synth to look for Interrupts content
+- `interruptTopText` allows you to add text to be displayed above the list of buttons
+- `interrupt-1-label` sets the text of the button for your first card
+- `interrupt-1-text` sets the content of your first card
+- For each additional card, replace '1' with '2' and so on, for an unlimited number
+
+Next, choose how you want the interrupt cards to show up in your game
+
+- `interruptsKeepOptionsVisible`: If TRUE, then the list of buttons will remain visible when an interrupt card is showing. Otherwise, the buttons will be hidden until the card is closed.
+- `interruptsInMenu`: If TRUE, then the list of buttons will also appear in the dropdown menu at the top of the page.
+- `interruptsReplaceMainCards`: If TRUE, then interrupt cards will appear _in place of_ regular card content in Shuffled. Otherwise, the interrupt cards will appear in their own separate zone on the page. This only applies to the Shuffled format.
+- `interruptsPauseNavigation`: If TRUE, players will not be able to advance the regular cards in Shuffled while an interrupt card is open. This option is only meaningful if interrupts _do not_ replace regular cards. If interrupts do replace regular cards, then navigation is always paused. This only applies to the Shuffled format.
+
+### Interrupts Example
+
+| First Column | Extension Name               | Example Customization        |
+| ------------ | ---------------------------- | ---------------------------- |
+| extension    | interrupts                   | TRUE                         |
+| extension    | interruptTopText             | Minigames, markdown-friendly |
+| extension    | interrupt-1-label            | First minigame               |
+| extension    | interrupt-1-text             | Some text, markdown-friendly |
+| extension    | interrupt-2-label            | Second minigame              |
+| extension    | interrupt-2-text             | More text, markdown-friendly |
+| extension    | interruptsKeepOptionsVisible | TRUE                         |
+| extension    | interruptsInMenu             | TRUE                         |
+| extension    | interruptsReplaceMainCards   | TRUE                         |
+| extension    | interruptsPauseNavigation    | TRUE                         |
+
 ## Hexflower as Extension
 
 This extension lets you embed an entire Hexflower game within a different format. Just create an additional spreadsheet for your Hexflower and paste it into the extension customization details.
@@ -232,42 +272,3 @@ This extension lets you embed an entire Generator game within a different format
 | First Column | Extension Name       | Example Customization                                                                                |
 | ------------ | -------------------- | ---------------------------------------------------------------------------------------------------- |
 | extension    | generatorAsExtension | https://docs.google.com/spreadsheets/d/19zYQMLvhgv3CtpMpNIpj5GAaY_lRsF_pF6q1UqVF4Bg/edit?usp=sharing |
-
-## Interrupts
-
-This extension lets you create a set of cards that you can display at any time during your game with the click of a button.
-
-This extension will generate a list of buttons on the game page. When one of the buttons is clicked, it will display your card until that card is closed.
-
-::: warning Note
-This extension is designed and tested for the Shuffled format only. However, you may be able to use it in other formats, in some cases.
-:::
-
-First, create your set of cards that can be displayed:
-
-- _interruptTopText_ allows you to put some text to be displayed above the list of buttons
-- _interrupt-1-label_ sets the text of the button for your first card
-- _interrupt-1-text_ sets the content of your first card
-- For each additional card, replace '1' with '2' and so on, for an unlimited number
-
-Next, choose how you want the interrupt cards to show up in your game
-
-- _interruptsKeepOptionsVisible_: If TRUE, then the list of buttons will remain visible when an interrupt card is showing. Otherwise, the buttons will be hidden until the card is closed.
-- _interruptsInMenu_: If TRUE, then the list of buttons will also appear in the dropdown menu at the top of the page.
-- _interruptsReplaceMainCards_: If TRUE, then interrupt cards will appear _in place of_ regular card content in Shuffled. Otherwise, the interrupt cards will appear in their own separate zone on the page.
-- _interruptsPauseNavigation_: If TRUE, players will not be able to advance the regular cards in Shuffled while an interrupt card is open. This option is only meaningful if interrupts _do not_ replace regular cards. If interrupts do replace regular cards, then navigation is always paused.
-
-### Interrupts Example
-
-| First Column | Extension Name               | Example Customization        |
-| ------------ | ---------------------------- | ---------------------------- |
-| extension    | interrupts                   | TRUE                         |
-| extension    | interruptTopText             | Minigames, markdown-friendly |
-| extension    | interrupt-1-label            | First minigame               |
-| extension    | interrupt-1-text             | Some text, markdown-friendly |
-| extension    | interrupt-2-label            | Second minigame              |
-| extension    | interrupt-2-text             | More text, markdown-friendly |
-| extension    | interruptsKeepOptionsVisible | TRUE                         |
-| extension    | interruptsInMenu             | TRUE                         |
-| extension    | interruptsReplaceMainCards   | TRUE                         |
-| extension    | interruptsPauseNavigation    | TRUE                         |
