@@ -18,28 +18,29 @@ Included extensions will appear below the the main area of play by default, thou
 
 If you're using your extensions with the Shuffled format, you can choose when they appear and disappear with the [extensionName]FirstVisible and [extensionName]LastVisible set to the card you want the extension to appear and disappear. Example:
 
-| First Column | Extension Name    | Example Customization |
-| ------------ | ----------------- | --------------------- |
-| extension    | playerTurnOrderFirstVisible | 3                 |
-| extension    | playerTurnOrderLastVisible | 12                |
+| First Column | Extension Name              | Example Customization |
+| ------------ | --------------------------- | --------------------- |
+| extension    | playerTurnOrderFirstVisible | 3                     |
+| extension    | playerTurnOrderLastVisible  | 12                    |
 
 Here's a list of all available extensions:
 
-| Name             | Description                                                                                           |
-| ---------------- | ----------------------------------------------------------------------------------------------------- |
-| staticBoxContent | A simple text box that is always visable                                                              |
-| playerTurnOrder  | A way of tracking player turns                                                                        |
-| imageGallery | Players can browse images and select one to focus on |
-| plusMinus        | A state tracking system where players can increase or decrease the values of things they are tracking |
-| editableList     | A list that players can edit, adding and deleting items                                               |
-| multiEditableLists | A way to have multiple editable lists |
-| diceRoller       | Players can roll dice by typing commands like '2d6'                                                   |
-| coinflip       | Players can flip a coin (with custom results)                                     |
-| standardDeck     | A way of drawing from a deck of playing cards                                                         |
-| journalEntries     | A place to log notes and journal entries |
-| embedWebsiteMessage | Allow players to embed a webpage within their session |
-| hexflowerAsExtension     | Embed an entire Hexflower game within a different format |
-| generatorAsExtension     | Embed an entire Generator game within a different format |
+| Name                 | Description                                                                                           |
+| -------------------- | ----------------------------------------------------------------------------------------------------- |
+| staticBoxContent     | A simple text box that is always visable                                                              |
+| playerTurnOrder      | A way of tracking player turns                                                                        |
+| imageGallery         | Players can browse images and select one to focus on                                                  |
+| plusMinus            | A state tracking system where players can increase or decrease the values of things they are tracking |
+| editableList         | A list that players can edit, adding and deleting items                                               |
+| multiEditableLists   | A way to have multiple editable lists                                                                 |
+| diceRoller           | Players can roll dice by typing commands like '2d6'                                                   |
+| coinflip             | Players can flip a coin (with custom results)                                                         |
+| standardDeck         | A way of drawing from a deck of playing cards                                                         |
+| journalEntries       | A place to log notes and journal entries                                                              |
+| embedWebsiteMessage  | Allow players to embed a webpage within their session                                                 |
+| hexflowerAsExtension | Embed an entire Hexflower game within a different format                                              |
+| generatorAsExtension | Embed an entire Generator game within a different format                                              |
+| interrupts           | A way to have a menu of cards that you can show at any point in your Shuffled game                    |
 
 ## Static Box
 
@@ -81,12 +82,12 @@ This extension lets players browse an image gallery and then select one image wh
 
 Please ensure that your image usage complies with all copyright laws.
 
-| First Column | Extension Name              | Example Customization |
-| ------------ | --------------------------- | --------------------- |
-| extension    | imageGallery             | http://example.com/image1.jpg,http://example.com/image2.jpg,http://example.com/image3.jpg                    |
-| extension    | imageGalleryCaptions | caption one,\*\*bold caption\*\*,a caption with a \[link\]\(http://example.com\)                     |
-| extension | imageGalleryAltText | text one,text two,text three
-| extension    | imageGalleryTitle       | Image Gallery        |
+| First Column | Extension Name       | Example Customization                                                                     |
+| ------------ | -------------------- | ----------------------------------------------------------------------------------------- |
+| extension    | imageGallery         | http://example.com/image1.jpg,http://example.com/image2.jpg,http://example.com/image3.jpg |
+| extension    | imageGalleryCaptions | caption one,\*\*bold caption\*\*,a caption with a \[link\]\(http://example.com\)          |
+| extension    | imageGalleryAltText  | text one,text two,text three                                                              |
+| extension    | imageGalleryTitle    | Image Gallery                                                                             |
 
 Here's a Google Sheet that can help with organzing all of your links, captions, and alt text: [Image Gallery Management Sheet](https://docs.google.com/spreadsheets/d/1I3dQ6KotBk6QEpXTxaU8uWL6pss3V0y46mkXkx_xeOo/edit?usp=sharing)
 
@@ -133,10 +134,10 @@ If you want to have more than one editable list (perhaps for different categorie
 
 In this case, the data should have be an array of objects with each object having a name (name of the list) and value (initial items in the list).
 
-| First Column | Extension Name     | Example Customization                                                                                                       |
-| ------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| extension    | multiEditableLists | [{"name": "Locations", "value": ["The Docks", "The Market"]},{"name": "Allies", "value": ["The Governer", "The Smuggler"]}] |
-| extension | multiEditableListsFirstVisible | 5 |
+| First Column | Extension Name                 | Example Customization                                                                                                       |
+| ------------ | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| extension    | multiEditableLists             | [{"name": "Locations", "value": ["The Docks", "The Market"]},{"name": "Allies", "value": ["The Governer", "The Smuggler"]}] |
+| extension    | multiEditableListsFirstVisible | 5                                                                                                                           |
 
 ## Coinflip
 
@@ -144,11 +145,11 @@ This extension lets players flip a coin. If you set 'coinflip' to 'TRUE' then th
 
 ### Coinflip example
 
-| First Column | Extension Name  | Example Customization                                              |
-| ------------ | --------------- | ------------------------------------------------------------------ |
-| extension    | coinflip | yes,no                                                        |
-| extension | coinflipTitle | Coin Flipper |
-| extension    | coinflipButtonLabel      | Click to flip |
+| First Column | Extension Name      | Example Customization |
+| ------------ | ------------------- | --------------------- |
+| extension    | coinflip            | yes,no                |
+| extension    | coinflipTitle       | Coin Flipper          |
+| extension    | coinflipButtonLabel | Click to flip         |
 
 ## Dice Roller
 
@@ -189,7 +190,7 @@ You can include the standard card deck by copying the example below. You can edi
 | First Column | Extension Name    | Example Customization                                                                                                                                                                                                                                                                                  |
 | ------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | extension    | standardDeckTitle | Standard Deck                                                                                                                                                                                                                                                                                          |
-| extension    | standardDeck   | {"fullDeck":["2♡","3♡","4♡","5♡","6♡","7♡","8♡","9♡","10♡","J♡","Q♡","K♡","A♡","2♢","3♢","4♢","5♢","6♢","7♢","8♢","9♢","10♢","J♢","Q♢","K♢","A♢","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣","A♣","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠","A♠"],"drawnCards":[]} |
+| extension    | standardDeck      | {"fullDeck":["2♡","3♡","4♡","5♡","6♡","7♡","8♡","9♡","10♡","J♡","Q♡","K♡","A♡","2♢","3♢","4♢","5♢","6♢","7♢","8♢","9♢","10♢","J♢","Q♢","K♢","A♢","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣","A♣","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠","A♠"],"drawnCards":[]} |
 
 ## Journal Entries
 
@@ -197,12 +198,12 @@ Use this extension to let your players write journal entries. The default text a
 
 By default, journal entries are sorted from newest at the top to oldest at the bottom. You can have the oldest at the top by specifying 'journalOrder' to be `oldestFirst`.
 
-| First Column | Extension Name   | Example Customization |
-| ------------ | ---------------- | --------------------- |
-| extension    | journalEntries   | []                    |
-| extension    | journalUpperText | Log Files             |
-| extension | journalOrder | oldestFirst |
-| extension | journalFirstVisible | 5 |
+| First Column | Extension Name      | Example Customization |
+| ------------ | ------------------- | --------------------- |
+| extension    | journalEntries      | []                    |
+| extension    | journalUpperText    | Log Files             |
+| extension    | journalOrder        | oldestFirst           |
+| extension    | journalFirstVisible | 5                     |
 
 ## Embed a Webpage
 
@@ -210,19 +211,59 @@ This extension lets you embed a webpage within your Story Synth game. You can sp
 
 Note - due to website security measures, not all webpages are capable of being embedded. Test out the page you want before finishing your game.
 
-| First Column | Extension Name   | Example Customization |
-| ------------ | ---------------- | --------------------- |
-| extension    | embedWebsiteMessage   | Add a link to a Google Doc to take notes                    |
-| extension    | hardcodedWebsiteURL | https://example.com |
+| First Column | Extension Name      | Example Customization                    |
+| ------------ | ------------------- | ---------------------------------------- |
+| extension    | embedWebsiteMessage | Add a link to a Google Doc to take notes |
+| extension    | hardcodedWebsiteURL | https://example.com                      |
+
+## Interrupts
+
+This extension lets you create a set of cards that you can display at any time during your game, with the click of a button.
+
+This extension will generate a list of buttons on the game page, or optionally, in the menu. When one of the buttons is clicked, it will display your card until that card is closed.
+
+::: warning Note
+This extension was intitially designed and tested for the Shuffled format but should work well with other formats too. If you have any issues, please reach out.
+:::
+
+First, create your set of cards that can be displayed:
+
+- `interrupts` set to `TRUE` tells Story Synth to look for Interrupts content
+- `interruptTopText` allows you to add text to be displayed above the list of buttons
+- `interrupt-1-label` sets the text of the button for your first card
+- `interrupt-1-text` sets the content of your first card
+- For each additional card, replace '1' with '2' and so on, for an unlimited number
+
+Next, choose how you want the interrupt cards to show up in your game
+
+- `interruptsKeepOptionsVisible`: If TRUE, then the list of buttons will remain visible when an interrupt card is showing. Otherwise, the buttons will be hidden until the card is closed.
+- `interruptsInMenu`: If TRUE, then the list of buttons will also appear in the dropdown menu at the top of the page.
+- `interruptsReplaceMainCards`: If TRUE, then interrupt cards will appear _in place of_ regular card content in Shuffled. Otherwise, the interrupt cards will appear in their own separate zone on the page. This only applies to the Shuffled format.
+- `interruptsPauseNavigation`: If TRUE, players will not be able to advance the regular cards in Shuffled while an interrupt card is open. This option is only meaningful if interrupts _do not_ replace regular cards. If interrupts do replace regular cards, then navigation is always paused. This only applies to the Shuffled format.
+
+### Interrupts Example
+
+| First Column | Extension Name               | Example Customization        |
+| ------------ | ---------------------------- | ---------------------------- |
+| extension    | interrupts                   | TRUE                         |
+| extension    | interruptTopText             | Minigames, markdown-friendly |
+| extension    | interrupt-1-label            | First minigame               |
+| extension    | interrupt-1-text             | Some text, markdown-friendly |
+| extension    | interrupt-2-label            | Second minigame              |
+| extension    | interrupt-2-text             | More text, markdown-friendly |
+| extension    | interruptsKeepOptionsVisible | TRUE                         |
+| extension    | interruptsInMenu             | TRUE                         |
+| extension    | interruptsReplaceMainCards   | TRUE                         |
+| extension    | interruptsPauseNavigation    | TRUE                         |
 
 ## Hexflower as Extension
 
 This extension lets you embed an entire Hexflower game within a different format. Just create an additional spreadsheet for your Hexflower and paste it into the extension customization details.
 
-| First Column | Extension Name       | Example Customization                                                                                |
-| ------------ | -------------------- | ---------------------------------------------------------------------------------------------------- |
-| extension    | hexflowerAsExtension | https://docs.google.com/spreadsheets/d/19zYQMLvhgv3CtpMpNIpj5GAaY_lRsF_pF6q1UqVF4Bg/edit?usp=sharing |
-| extension | hexflowerFirstVisible | 3 |
+| First Column | Extension Name        | Example Customization                                                                                |
+| ------------ | --------------------- | ---------------------------------------------------------------------------------------------------- |
+| extension    | hexflowerAsExtension  | https://docs.google.com/spreadsheets/d/19zYQMLvhgv3CtpMpNIpj5GAaY_lRsF_pF6q1UqVF4Bg/edit?usp=sharing |
+| extension    | hexflowerFirstVisible | 3                                                                                                    |
 
 ## Generator as Extension
 
