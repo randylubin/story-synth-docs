@@ -98,6 +98,7 @@ Key options:
 - styleTemplate – use this to specify an existing style template. Options: cyberpunk, vaporwave, fantasy, dark, light.
 - showSummary – let players switch from grid view to the concise Summary View
 - showFullLists – let players switch from grid view to Full List View, which shows all possible options per category
+- defaultSelections – set the inital values for each option. It's zero indexed, so to pick the first value use '0' (e.g. '0,0,0,0,0' would set the first value for each of five columns)
 
 ## Hexflower
 
@@ -106,7 +107,7 @@ Key options:
 
 The Hexflower format creates a grid of hexagons in the shape of a larger hexagon. Each hex contains a summary and is clickable. Clicked hexes can have additional information displayed below the Hexflower by using the fullContent column.
 
-You can use the background column to specify a backgaround image or css webcolor name or color code (e.g. #ABC123). There's a [hex image template for Affinity Designer](https://github.com/randylubin/Story-Synth/blob/master/public/img/hex-background-template.afdesign), make sure to hide the grey guides before you export. Use a service like [https://freeimage.host/](https://freeimage.host/) to host your image and then paste the image url in the sheet.
+You can use the background column to specify a backgaround image or css webcolor name or color code (e.g. #ABC123). There's a [hex image template for Affinity Designer](https://drive.google.com/file/d/1-rlYr9U4jtUDuN0YwdsaVT9U-TP6dSr8/view?usp=sharing), make sure to hide the grey guides before you export. Use a service like [https://freeimage.host/](https://freeimage.host/) to host your image and then paste the image url in the sheet.
 
 You can also control the probability weighting for each hex's movement, making it more or less likely for it to move to specific adjacent hexes – see the note in the sheet for more information.
 
