@@ -72,3 +72,10 @@ There’s no need to cite Story Synth in your game or on your webpage, though cr
 ## Contact
 
 Story Synth is designed and maintained by [Randy Lubin](http://randylubin.com/), of [Diegetic Games](https://diegeticgames.com/). You can email him at [randy@storysynth.org](mailto:randy@storysynth.org) or find him on Twitter at [@randylubin](https://twitter.com/randylubin).
+
+## DMCA / Copyright Violation Information
+Story Synth games are automatically generated from Google Sheets based on the URL of the Story Synth game page. Game content and images are all hosted off-platform.
+
+If you have concerns about a copyright violation on the Story Synth, please reach out. Randy Lubin is the registered agent:
+Email: dmca@storysynth.org
+Registration Number: DMCA-1043587
