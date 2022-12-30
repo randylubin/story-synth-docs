@@ -122,3 +122,34 @@ Key options:
 - initiallyVisible – sets which hexes start visible in fogOfWar
 
 Hexflowers were popularized by [Goblin’s Henchman](https://goblinshenchman.wordpress.com/hex-power-flower/) and the [Hex Flower Cookbook](https://www.drivethrurpg.com/product/295083/Hex-Flower-Cookbook--an-overview-and-some-thoughts-on-Hex-Flower-Game-Engines-by-Goblins-Henchman) has plenty of examples and thoughts on how to make and use Hexflowers. I also recommend checking out Emily Short’s blog post on [Narrative States](https://emshort.blog/2019/11/23/narrative-states/) as she has great insights on interactive fiction that translate well to Hexflowers.
+
+## Hexmap
+
+[Hexmap Template Spreadsheet](https://docs.google.com/spreadsheets/d/1tW0XdThjJesSdRcU_Tj1hk-V008QIpVw87UDcTdGQ-k/edit?usp=sharing)
+[Hexflower Demo](https://storysynth.org/Hexmap/1tW0XdThjJesSdRcU_Tj1hk-V008QIpVw87UDcTdGQ-k)
+
+The Hexmap format creates a grid of hexagons of a length and width that you define. Each hex on the map displays a `summary` and is clickable. Clicked hexes can have additional information displayed in a sidebar that you can specify by using the `fullContent` column. You can use the `Facilitator Content` column to specify additional info visible only to a player in facilitator mode (e.g. for GMs).
+
+There are many relevant custom options, including hiding tiles that haven't been seen and specifying how randomly generate a map, including partially random partially specified layouts.
+
+You can use the background column to specify a backgaround image or css webcolor name or color code (e.g. #ABC123). There's a [hex image template for Affinity Designer](https://drive.google.com/file/d/1-rlYr9U4jtUDuN0YwdsaVT9U-TP6dSr8/view?usp=sharing), make sure to hide the grey guides before you export. Use a service like [https://freeimage.host/](https://freeimage.host/) to host your image and then paste the image url in the sheet.
+
+Key options:
+
+- rows – how many rows your map will have
+- columns - how many columns your map will have
+- hexOrientation – set to flatTop (default) or pointyTop to change the orientation of the hexes by 90 degrees (note that pointyTop will swap your rows and columns)
+<!-- - hexWarp – set to TRUE if you want random movement to be possible off the edges of the hex flower and wrapping back around (wraps are only vertical or diagonal) -->
+- startingHex – which hex will be the inital starting location
+<!-- - startingHexFixedTile – specifies that the starting tile is  -->
+- lookBeforeMove – allows players to click on a hex and see limited information before choosing to move there (taken from the `Look Content` column)
+- lookIntoFog – allows "looking" into tiles that are not visible
+- moveIntoFog – allows moving into tiles that are not visible
+- initiallyVisited – specifies some hexes to be "previously visited" – previously visited tiles show `full content` when looked at
+- facilitatorButton – allows switching into facilitator mode that: removes the fog of war, shows faciliator-only content, allows you to reselect hex content randomly for from a list
+- randomizeHexes – set to `randomNoCopies` to have at most one of each hex, but in a random location; set to `randomWithCopies` if you want to repeatedly select randomly from the entire list of hex options with the option for repeats, leave blank or omit this option to manually specify the map
+- tilesWithFixedLocations – specify which hexes are always in the same place, even with the randomizeHexes option
+- fogOfWar – some hexes start hidden and are only revealed when you move either onto them (revealOnMove) or next to them (revealNeighbors)
+- initiallyVisible – sets which hexes start visible, if using fogOfWar
+- currentHexReplacementIcon – set an icon that appears instead of `summary` on the current hex location
+- randomMoveButton – show a button which randomly moves the current hex to a neighbor
