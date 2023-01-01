@@ -152,4 +152,6 @@ Key options:
 - fogOfWar – some hexes start hidden and are only revealed when you move either onto them (revealOnMove) or next to them (revealNeighbors)
 - initiallyVisible – sets which hexes start visible, if using fogOfWar
 - currentHexReplacementIcon – set an icon that appears instead of `summary` on the current hex location
+<!-- - currentHexOverlayIcon – alternative to the above, overlaying the icon rather than replacing it -->
 - randomMoveButton – show a button which randomly moves the current hex to a neighbor
+- showLookOnHover – shows a pop-up with the `look content` when hovering over a hex
