@@ -132,7 +132,7 @@ The Hexmap format creates a grid of hexagons of a length and width that you defi
 
 There are many relevant custom options, including hiding tiles that haven't been seen and specifying how randomly generate a map, including partially random partially specified layouts.
 
-You can use the background column to specify a backgaround image or css webcolor name or color code (e.g. #ABC123). There's a [hex image template for Affinity Designer](https://drive.google.com/file/d/1-rlYr9U4jtUDuN0YwdsaVT9U-TP6dSr8/view?usp=sharing), make sure to hide the grey guides before you export. Use a service like [https://freeimage.host/](https://freeimage.host/) to host your image and then paste the image url in the sheet.
+You can use the background column to specify a backgaround image or css webcolor name or color code (e.g. #ABC123). There's a [hex image template for Affinity Designer](https://drive.google.com/file/d/1-rlYr9U4jtUDuN0YwdsaVT9U-TP6dSr8/view?usp=sharing), make sure to hide the grey guides before you export. Use a service like [https://freeimage.host/](https://freeimage.host/) to host your image and then paste the image url in the sheet. If you are trying to recreate the template in another editor, the image dimensions are 106.2px x 92px. The length of the hexagon's top and bottom sides is 53.2px. You can also use this [https://drive.google.com/file/d/1DTFbjn91zKd2swN66pWu8Q9YaaBhWMq7/view](export png) as a guide.
 
 Key options:
 
